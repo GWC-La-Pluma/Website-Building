@@ -18,7 +18,11 @@ header{
     
 header a{
     text-decoration: none;
-    color: black;
+    color: wheat;
+}
+
+body{
+    background-image: url("background_main.jpg");
 }
     
 section{
@@ -41,7 +45,7 @@ section{
 .Container p{
     margin-top: 2%;
     font-size: 2em;
-    color: wheat;
+    color: black;
 }
     
 footer {
@@ -51,8 +55,8 @@ footer {
     font-size: 1em;
 }
 
-#intro{
-    background-image: url(flower.jpg);
+/*#intro{
+    background-image: url(background_main.jpg);
     background-repeat: none;
     background-size: cover;
 }
@@ -62,3 +66,11 @@ footer {
 #contact{
     background-color: rgb(41, 41, 41);
 }
+<style>
+            body{
+                background: url("background_main.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        </style>*/
