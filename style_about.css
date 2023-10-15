@@ -41,3 +41,9 @@ header{
 body{
     background-color: rgb(229, 205, 160);
 }
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
