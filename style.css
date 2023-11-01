@@ -21,6 +21,11 @@ header{
     padding: 20px 10%;
 }
 
+h1{
+    font-family: 'Tangerine', cursive;
+    font-weight: 500;
+}
+
 .nav_links{
     list-style: none;
 }
@@ -36,6 +41,14 @@ header{
 
 .nav_links li a:hover{
     color: #caa5009d;
+}
+
+/*IMPORTANT: FIGURE OUT HOW TO CENTER IT INSTEAD OF HARDCODING THE LEFT VALUE*/
+.caption{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 550px;
+    left: 510px;
 }
 
 body{
