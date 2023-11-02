@@ -25,6 +25,11 @@ h1{
     font-weight: 500;
 }
 
+h1{
+    font-family: 'Tangerine', cursive;
+    font-weight: 500;
+}
+
 .nav_links{
     list-style: none;
 }
@@ -97,3 +102,23 @@ footer {
     justify-content: center;
     font-size: 1em;
 }
+
+/*#intro{
+    background-image: url(background_main.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+#about{
+    background-color:rgb(41, 41, 41);
+}
+#contact{
+    background-color: rgb(41, 41, 41);
+}
+<style>
+            body{
+                background: url("background_main.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        </style>*/
