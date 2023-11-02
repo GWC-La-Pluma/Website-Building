@@ -35,13 +35,23 @@ header{
 }
 
 body{
-    background-color: rgb(229, 205, 160);
+    /* background-color: rgb(232, 196, 167); */
+    /* background-color: rgb(226, 184, 166); */
+    /* background-color: rgb(113, 177, 176); */
+    background-color: rgb(158, 199, 198);
+    /* background-color: rgb(229, 205, 160); */
 }
 
 img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
+}
+
+/*IMPORTANT: see why changing the font weight isn't working from here and I'm having to use in-line*/
+.title{
+    font-family: 'Tangerine', cursive;
+    font-weight: 500;
 }
 
 .image_row{
@@ -53,13 +63,20 @@ img{
 .image_container{
     display: flex;
     flex-direction: column;
-    /* padding-top:50px;
-    padding-left:50px;
-    padding-right:50px;
-    padding-bottom:50px; */
     margin:50px 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.feather_border{
+    position: absolute;
+    top: -75px;
+    left: -65px;
 }
 
 .image_caption{
     padding-top:25px;
+    width:250px;
+    font-size: 17px;
 }

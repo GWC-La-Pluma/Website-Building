@@ -22,7 +22,6 @@ header{
 }
 h1{
     font-family: 'Tangerine', cursive;
-    font-weight: 500;
 }
 
 .nav_links{
@@ -33,10 +32,6 @@ h1{
     display: inline-block;
     padding: 0px 20px;
 }
-
-/* .introduction{
-    background-image:url(main_page_background1.png);
-} */
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
@@ -53,19 +48,11 @@ h1{
     height: 50px;
 }
 
-/*IMPORTANT: FIGURE OUT HOW TO CENTER IT INSTEAD OF HARDCODING THE LEFT VALUE*/
-.caption{
-    font-family: 'Josefin Sans', sans-serif;
-    position: absolute;
-    top: 550px;
-    left: 510px;
-}
-
 body{
     min-height: 100vh;
-    background: url("main_background.png");
+    background: url("background_main.jpg");
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
 }
     
 section{
@@ -76,7 +63,7 @@ section{
 }
     
 .Container{
-    margin-top: 10%;
+    margin-top: 10%
 }
     
 .Container h1{
