@@ -40,5 +40,7 @@ header{
 }
 
 body{
+    min-height: 100vh;
     background: url("tacenda_background.jpeg");
+    background-size: cover;
 }
