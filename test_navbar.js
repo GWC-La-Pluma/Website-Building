@@ -47,19 +47,4 @@ const toggleItem=(item)=>{
     }
 }
 
-/*delete dropdown*/
-const mediaQuery=matchMedia('(min-width: 1118px'), dropdownContainer=document.querySelectorAll('.dropdown__container')
-
-const removeStyle=()=>{
-    if(mediaQuery.matches){
-        dropdownContainer.forEach((e)=>{
-            e.removeAttribute('style')
-        })
-
-        dropdownItems.forEach((e)=>{
-            e.classList.remove('show-dropdown')
-        })
-    }
-}
-
 addEventListener('resize',removeStyle)
