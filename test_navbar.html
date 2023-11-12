@@ -2,70 +2,39 @@
 <html>
     <head>
         <title>Navbar</title>
-        <link rel="stylesheet" href="test_style.css">
+        <link rel="stylesheet" href="test_navbar.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
-        <script defer src="script.js"></script> 
+        <script defer src="test_navbar.js"></script> 
     </head>
     <body>
-        <script src="/script.js"></script>
         <header class="header">
-            <nav class="nav container">
-                <div class="nav__data">
-                    <a class="nav__logo">
-                        <img src="logo.jpg" width="40" height="40"> 
-                        <!--<i class="ri-code-s-slash-line"></i>-->La Pluma
-                    </a>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line nav__toggle-menu"></i>
-                        <i class="ri-close-line nav__toggle-close"></i>
-                    </div>
-                </div>
-                <!--nav menu-->
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <!--<li><a href="issues_page.html">Issues</a></li>-->
-                        <li><a href="main_body.html" class="nav__link">Home</a></li>
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <div class="dropdown__content">
-                                    <div class="dropdown__group">
-                                        <span class="dropdown__title">Archive</span>
-                                        <ul class="dropdown__list">
-                                            <li><a href="#" class ="dropdown__link">Tacenda</a></li>
-                                            <li><a href="#" class ="dropdown__link">Kalopsia</a></li>
-                                            <li><a href="#" class ="dropdown__link">Quatervois</a></li>
-                                            <li><a href="#" class ="dropdown__link">Efflorescence</a></li>
-                                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
-                                        </ul>
-                                        <span class="dropdown__title">Upcoming</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>  
-                        <!--<li><a href="events_page.html">Events</a></li>-->
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Events<i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <div class="dropdown__content">
-                                    <div class="dropdown__group">
-                                        <ul class="dropdown__list">
-                                            <li><a href="#" class ="dropdown__link">Open Mic</a></li>
-                                            <li><a href="#" class ="dropdown__link">Holiday Cards</a></li>
-                                            <li><a href="#" class ="dropdown__link">Singing Valentine Cards</a></li>
-                                            <li><a href="#" class ="dropdown__link">Socials</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="about_page.html" class="nav__link">Mastheads</a></li>
-                    </ul>
-                </div>
+            <a class="logo"><img src="logo.jpg" width="30px" height="35px">La Pluma</a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="#" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="#" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="#" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Open Mic</a></li>
+                            <li><a href="#" class ="dropdown__link">Holiday Cards</a></li>
+                            <li><a href="#" class ="dropdown__link">Singing Valentine Cards</a></li>
+                            <li><a href="#" class ="dropdown__link">Socials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Mastheads</a></li>
+                </ul>
             </nav>
         </header>
     </body>
