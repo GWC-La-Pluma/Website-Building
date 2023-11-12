@@ -19,7 +19,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 1.5%;
+    padding: 25px 1.5%;
 }
 
 .nav_links{
@@ -36,11 +36,82 @@ header{
 }
 
 .nav_links li a:hover{
-    color: #caa5009d;
+    color: #aaa9d3;
 }
 
 body{
-    min-height: 100vh;
-    background: url("tacenda_background.jpeg");
-    background-size: cover;
+    min-height: 947vh;
+    min-width: 100vh;
+    background: url("TacendaPics/new_tacenda_background.PNG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cover_page{
+    min-height: 245vh;
+}
+
+.editors_letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Savoye LET', sans-serif;
+    color: #113049;
+    padding-right: 30px;
+    /* padding-top: 10px; */
+}
+
+/* IMPORTANT: why isn't text-align: center working??? */
+.letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-indent: 60px;
+    font-size: 23px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #0e283e;
+    padding-left: 325px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.gallery h1{
+    font-family: 'Savoye LET', sans-serif;
+    font-size: 110px;
+    font-weight: 500;
+    padding-top: 200px;
+}
+
+.gallery_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .gallery_first_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery_first_row img{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 400px;
+} */
+
+.gallery_row img{
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 400px;
 }

@@ -5,7 +5,7 @@
 }
 li,a{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 10%;
+    padding: 25px 10%;
     background-color: #24252A;
 }
 
@@ -31,7 +31,7 @@ header{
 }
 
 .nav_links li a:hover{
-    color: #caa5009d;
+    color: #aaa9d3;
 }
 
 body{
@@ -48,9 +48,29 @@ img{
     border-radius: 50%;
 }
 
-/*IMPORTANT: see why changing the font weight isn't working from here and I'm having to use in-line*/
+.feather1{
+    position: relative;
+    top: -3vh;
+    width: 23vh;
+    height: 23vh;
+}
+
+.feather2{
+    position: relative;
+    top: -3vh;
+    width: 23vh;
+    height: 23vh;
+}
+
 .title{
-    font-family: 'Tangerine', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*IMPORTANT: see why changing the font weight isn't working from here and I'm having to use in-line*/
+.mastheads{
+    font-family: 'Savoye LET', sans-serif;
     font-weight: 500;
 }
 
@@ -69,6 +89,11 @@ img{
     left: 0;
 }
 
+.image_container h2{
+    font-family: 'EB Garamond', serif
+}
+
+/* IMPORTANT: redo the pixels with vh */
 .feather_border{
     position: absolute;
     top: -75px;
@@ -76,7 +101,8 @@ img{
 }
 
 .image_caption{
-    padding-top:25px;
-    width:250px;
+    font-family: 'EB Garamond', serif;
     font-size: 17px;
+    padding-top:15px;
+    width:250px;
 }
