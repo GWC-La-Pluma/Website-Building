@@ -40,15 +40,38 @@ header{
 }
 
 body{
-    min-height: 947vh;
-    min-width: 100vh;
+    /* min-height: 947vh;
+    min-width: 100vh; */
+    height: 100%;
+    width: 100%;
     background: url("TacendaPics/new_tacenda_background.PNG");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
+.container {
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+  }
+
 .cover_page{
-    min-height: 245vh;
+    /* height: 50%;  */
+    height: 245vh;
+
+    /* Trying to make it work with percents */
+    /* background-color: blue; */
+    /* display: flex;
+    flex-direction: column;
+    /* padding-bottom: 10%; 
+    padding-left: 47%;
+    padding-top: 23%; */
+}
+
+.cover_page p{
+    font-size: 120px;
 }
 
 .editors_letter{
@@ -58,10 +81,9 @@ body{
 }
 
 .title{
+    justify-content: center;
     font-family: 'Savoye LET', sans-serif;
     color: #113049;
-    padding-right: 30px;
-    /* padding-top: 10px; */
 }
 
 /* IMPORTANT: why isn't text-align: center working??? */
@@ -72,8 +94,9 @@ body{
 
     text-indent: 60px;
     font-size: 23px;
+    /* font-size: 140%; */
     font-family: 'Josefin Sans', sans-serif;
-    color: #0e283e;
+    color: #113049;
     padding-left: 325px;
 }
 
@@ -88,6 +111,7 @@ body{
     font-size: 110px;
     font-weight: 500;
     padding-top: 200px;
+    color: #94b4ca;
 }
 
 .gallery_row{
