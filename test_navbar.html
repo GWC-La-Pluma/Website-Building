@@ -4,11 +4,18 @@
         <title>Navbar</title>
         <link rel="stylesheet" href="test_navbar.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
         <script defer src="test_navbar.js"></script> 
     </head>
     <body>
         <header class="header">
-            <a class="logo"><img src="logo.jpg" width="30px" height="35px">La Pluma</a>
+            <div class="logoSocials">
+                <a class="logo"><img src="logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-line nav__toggle-menu"></i>
                 <i class="ri-close-line nav__toggle-close"></i>
