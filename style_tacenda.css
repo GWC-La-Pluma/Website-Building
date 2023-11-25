@@ -1,141 +1,364 @@
+/*variables*/
+:root{
+  --header-height: 3.5rem;
+
+  /*colors*/
+  --first-color: hsl(220,68%,54%);
+  --first-color-lighten: hsl(218, 59%, 18%);
+  --title-color: hsl(216, 100%, 99%);
+  --text-color: hsl(220, 7%, 67%);
+  --header-color: hsl(217, 78%, 7%);
+
+  /*font*/
+  /*--body-font: */
+  --normal-font-size: 1rem;
+  --small-font-size: 0.9rem;
+  --smaller-font-size: 0.8rem;
+
+  /*font weight*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*z index*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*typewriter*/
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 24;
+}
+
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-    
-header{
-    background-color: #24252A;
-}
-
-li,a{
-    font-weight: 500;
-    font-size: 18px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 25px 1.5%;
-}
-
-.nav_links{
-    list-style: none;
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
-    color: #aaa9d3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    /* min-height: 947vh;
-    min-width: 100vh; */
-    height: 100%;
-    width: 100%;
-    background: url("TacendaPics/new_tacenda_background.PNG");
-    background-repeat: no-repeat;
-    background-size: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+} 
+
+/*header*/
+header{
+  position: absolute;
+  width: 100%;
+  min-height: 60px;
+  background-color: var(--header-color);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: column;
+#instagram, #gmail, #pinterest, #spotify{
+  text-decoration: none;
+  font-size: 1.8em; 
+  background-color: var(--header-color);
+  color: var(--title-color);
+  box-shadow: 0.38px 0.38px 0.38px #00000080, 1.88px 0.19px 2.26px #00000080, 0.38px 0.38px 1.88px #00000080, 
+  0.38px 0.38px 0.57px #00000080, inset 0.38px 0.38px 1.88px #00000080, inset 0.38px 0.38px 1.88px #00000080,
+  inset 0.38px 0.38px 1.88px #00000080, inset 0.38px 0.38px 1.88px #00000080;
+  border-radius: 5.47px;
+  padding: 2.08px 3.58px;
+  margin: 0 7.55px;
+  animation: animate_logo 3s linear infinite;
+  text-shadow: 0 0 9.43px #0072ff, 0 0 18.87px #0072ff, 0 0 28.3px #0072ff, 0 0 37.74px #0072ff;
+}
+
+#gmail{
+  animation-delay: 0.2s;
+}
+
+#pinterest{
+  animation-delay: 0.4s;
+}
+
+#spotify{
+  animation-delay: 0.6s;
+}
+
+@keyframes animate_logo{
+  from{ filter: hue-rotate(0deg); }
+  to{ filter: hue-rotate(45deg); }
+}
+
+header .logo{
+  color: var(--title-color);
+  font-size: 1.4em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25em;
+}
+
+header .logoSocials{
+  display: flex;
+  column-gap: 0.8em;
+}
+
+header ul{
+  position: relative;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+header ul li .dropdown__arrow{
+  font-size: 1.2em;
+  font-weight: initial;
+  transition: transform 0.4s;
+}
+
+header ul li a{
+  color: var(--title-color);
+  font-size: 1em;
+  padding: 20px 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li a:hover{
+  background-color: var(--first-color-lighten);
+}
+
+header ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: var(--header-color);
+}
+
+header ul li ul li{
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+header ul li ul li a{
+  color: var(--text-color);
+}
+
+.title_page{
+  padding-top: 100%;
+  background: url("TacendaPics/cover_div_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper{
+  text-decoration: none;
+  display: inline-flex;
+  place-content: center;
+  text-align: center;
+  column-gap: 0.2em;
+}
+
+.dynamic-text, .static-text {
+  list-style-type: none;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  width: max-content;
+}
+
+.dynamic-text::before,
+.dynamic-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dynamic-text::before {
+  background: white;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.dynamic-text::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+      blink 2000ms steps(var(--typewriterCharacters)) infinite;
+}
+@keyframes typewriter {
+  to {
+      left: 100%;
   }
-
-.cover_page{
-    /* height: 50%;  */
-    height: 245vh;
-
-    /* Trying to make it work with percents */
-    /* background-color: blue; */
-    /* display: flex;
-    flex-direction: column;
-    /* padding-bottom: 10%; 
-    padding-left: 47%;
-    padding-top: 23%; */
 }
 
-.cover_page p{
-    font-size: 120px;
+@keyframes blink {
+  to {
+      background: transparent;
+  }
 }
 
 .editors_letter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-image: url("TacendaPics/letter_div_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 22%;
 }
 
 .title{
-    justify-content: center;
     font-family: 'Savoye LET', sans-serif;
-    color: #113049;
+    color: var(--header-color);
+    font-size: 4vw;
 }
 
-/* IMPORTANT: why isn't text-align: center working??? */
 .letter{
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    text-indent: 60px;
-    font-size: 23px;
-    /* font-size: 140%; */
+    text-indent: 2vw;
     font-family: 'Josefin Sans', sans-serif;
-    color: #113049;
-    padding-left: 325px;
+    color: var(--header-color);
+    max-width: 76%;
+    font-size: 2vw;
+
+    padding-left: 18%;
+    padding-top: 3%;
+    padding-bottom: 13%;
+}
+
+.spotify_container{
+    background-image: url("TacendaPics/spotify_div_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
+    background-color: rgb(50,90,120);
+    background: url("TacendaPics/gallery_div_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-.gallery h1{
-    font-family: 'Savoye LET', sans-serif;
-    font-size: 110px;
-    font-weight: 500;
-    padding-top: 200px;
-    color: #94b4ca;
-}
+    padding-bottom: 5%;
 
-.gallery_row{
+    max-width: 3000px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
-/* .gallery_first_row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.gallery-image{
+    width: 30%;
+    height: calc(50%-20px);
+    min-width: 300px;
+    min-height: 200px;
+    margin: 1%;
+    overflow: hidden;
 }
 
-.gallery_first_row img{
-    padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 400px;
-} */
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
 
-.gallery_row img{
-    padding-top: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 400px;
+footer{
+    background-color: rgb(50,90,120);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 44%;
+}
+
+.copyright{
+    color: var(--title-color);
+    font-size: 1.4vw;
+}
+
+@media (max-width: 1000px){
+  header{
+    padding: 0 20px;
+  }
+  header nav{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: var(--header-color);
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  header nav ul li{
+    width: 100%;
+  }
+  header nav ul li ul{
+    position: relative;
+    width: 100%;
+    left: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s;
+  }
+
+  header .nav__toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  header .nav__toggle-menu, header .nav__toggle-close{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    position: absolute;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    cursor: pointer;
+    transition: opacity 0.1s, transform 0.4s;
+  }
+  header .nav__toggle-close{
+    opacity: 0;
+  }
+
+  .show-menu{
+    opacity: 1;
+    pointer-events: initial;
+  }
+  .show-icon .nav__toggle-menu{
+      opacity: 0;
+      transform: rotate(90deg);
+  }
+  .show-icon .nav__toggle-close{
+      opacity: 1;
+      transform: rotate(90deg);
+  }
+
+  .show-dropdown .dropdown__arrow{
+    transform: rotate(180deg);
+  }
+}
+@media (min-width: 1000px){
+  header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: var(--header-color);
+    display: none;
+  }
+  header ul li:hover ul{
+    display: block;
+  }
+  header ul li:hover .dropdown__arrow{
+    transform: rotate(180deg);
+  }
 }
