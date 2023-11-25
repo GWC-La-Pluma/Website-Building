@@ -156,13 +156,15 @@ header ul li ul li a{
   place-content: center;
   text-align: center;
   column-gap: 0.2em;
+  padding-left: 30%;
+  padding-bottom: 10%;
 }
 
 .dynamic-text, .static-text {
   list-style-type: none;
   position: relative;
-  font-family: "Source Code Pro", monospace;
   width: max-content;
+  font-size: 2vw;
 }
 
 .dynamic-text::before,
@@ -206,13 +208,13 @@ header ul li ul li a{
   background-position: center;
   background-size: cover;
 
-  padding-top: 22%;
+  padding-top: 13%;
 }
 
 .title{
     font-family: 'Savoye LET', sans-serif;
     color: var(--header-color);
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .letter{
@@ -223,12 +225,11 @@ header ul li ul li a{
     text-indent: 2vw;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--header-color);
-    max-width: 76%;
+    max-width: 79%;
     font-size: 2vw;
 
     padding-left: 18%;
-    padding-top: 3%;
-    padding-bottom: 13%;
+    padding-bottom: 10%;
 }
 
 .spotify_container{
@@ -239,7 +240,7 @@ header ul li ul li a{
 
     padding-left: 10%;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
 }
 
 .gallery{
@@ -360,5 +361,8 @@ footer{
   }
   header ul li:hover .dropdown__arrow{
     transform: rotate(180deg);
+  }
+  .editors_letter{
+    padding-top: 16%;
   }
 }
