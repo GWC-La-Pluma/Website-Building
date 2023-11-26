@@ -1,121 +1,266 @@
+/*variables*/
+:root{
+    --header-height: 3.5rem;
+
+    /*colors*/
+    --first-color-lighten: rgb(32,42,90);
+    --title-color: hsl(216, 100%, 99%);
+    --text-color: rgb(103,121,169);
+    --header-color: hsl(217, 78%, 7%);
+    --background-color: rgb(23,23,67);
+
+    /*font*/
+    /*--body-font: */
+    --normal-font-size: 1rem;
+    --small-font-size: 0.9rem;
+    --smaller-font-size: 0.8rem;
+
+    /*font weight*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*z index*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /*typewriter*/
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 48;
+}
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-li,a{
-    font-weight: 500;
-    font-size: 18px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-header{
-    background-color: #24252A;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 25px 1.5%;
-}
-
-.nav_links{
-    list-style: none;
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
-    color: #aaa9d3;
-}
-
 body{
-    /* min-height: 947vh;
-    min-width: 100vh; */
-    height: 100vh;
-    width: 100%;
-    background: url("QuatervoisPics/quatervois_background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: black;
-}
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--background-color);
+} 
 
-.container {
-    height: 100%;
+/*header*/
+header{
+    position: absolute;
     width: 100%;
-    /* background-color: blue; */
+    min-height: 60px;
+    background-color: var(--header-color);
+    padding: 0 20px;
     display: flex;
-    flex-direction: column;
-  }
-
-.cover_page{
-    /* height: 50%;  */
-    height: 245vh;
-
-    /* Trying to make it work with percents */
-    /* background-color: blue; */
-    /* display: flex;
-    flex-direction: column;
-    /* padding-bottom: 10%; 
-    padding-left: 47%;
-    padding-top: 23%; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cover_page p{
-    font-size: 120px;
+#instagram, #gmail, #pinterest, #spotify{
+    text-decoration: none;
+    font-size: 1.8em; 
+    background-color: var(--header-color);
+    color: var(--title-color);
+    box-shadow: 0.38px 0.38px 0.38px #00000080, 1.88px 0.19px 2.26px #00000080, 0.38px 0.38px 1.88px #00000080, 
+    0.38px 0.38px 0.57px #00000080, inset 0.38px 0.38px 1.88px #00000080, inset 0.38px 0.38px 1.88px #00000080,
+    inset 0.38px 0.38px 1.88px #00000080, inset 0.38px 0.38px 1.88px #00000080;
+    border-radius: 5.47px;
+    padding: 2.08px 3.58px;
+    margin: 0 7.55px;
+    animation: animate_logo 3s linear infinite;
+    text-shadow: 0 0 9.43px #0072ff, 0 0 18.87px #0072ff, 0 0 28.3px #0072ff, 0 0 37.74px #0072ff;
+}
+
+#gmail{
+    animation-delay: 0.2s;
+}
+
+#pinterest{
+    animation-delay: 0.4s;
+}
+
+#spotify{
+    animation-delay: 0.6s;
+}
+
+@keyframes animate_logo{
+    from{ filter: hue-rotate(40deg); }
+    to{ filter: hue-rotate(85deg); }
+}
+
+header .logo{
+    color: var(--title-color);
+    font-size: 1.4em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25em;
+}
+
+header .logoSocials{
+    display: flex;
+    column-gap: 0.8em;
+}
+
+header ul{
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li .dropdown__arrow{
+    font-size: 1.2em;
+    font-weight: initial;
+    transition: transform 0.4s;
+}
+
+header ul li a{
+    color: var(--title-color);
+    font-size: 1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a:hover{
+    background-color: var(--first-color-lighten);
+}
+
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: var(--header-color);
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+header ul li ul li a{
+    color: var(--text-color);
+}
+
+.title_page{
+    padding-top: 100%;
+    background: url("QuatervoisPics/cover_div_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .editors_letter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image: url("QuatervoisPics/letter_div_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    padding-top: 13%;
 }
 
 .title{
-    justify-content: center;
     font-family: 'Savoye LET', sans-serif;
-    color: #a2dbff9d;
+    color: var(--text-color);
+    font-size: 5vw;
 }
 
-/* IMPORTANT: why isn't text-align: center working??? */
 .letter{
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    text-indent: 60px;
-    font-size: 23px;
-    /* font-size: 140%; */
+    text-indent: 2vw;
     font-family: 'Josefin Sans', sans-serif;
-    color: #a2dbff9d;
-    padding-left: 325px;
+    color: var(--text-color);
+    max-width: 90%;
+    font-size: 2vw;
+
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.def_page{
+    background: url("QuatervoisPics/def_div_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.wrapper{
+    color: white;
+    text-decoration: none;
+
+    padding-top: 30%;
+    padding-left: 28%;
+    padding-bottom: 70%;
+}
+
+.dynamic-text, .static-text {
+    list-style-type: none;
+    position: relative;
+    width: max-content;
+    font-size: 2.7vw;
+    margin-bottom: 5%;
+}
+
+.dynamic-text::before,
+.dynamic-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dynamic-text::before {
+    background: rgb(175, 96, 109);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.dynamic-text::after {
+    width: 0.125em;
+    background: white;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+        blink 2000ms steps(var(--typewriterCharacters)) infinite;
+    }
+    @keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
 }
 
 .gallery{
+    background: url("QuatervoisPics/gallery_div_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    padding-bottom: 10%;
+
+    max-width: 3000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-    width: 100%;
-    height: 90vh;
-    max-width: 1600px;
-    max-height: 800px;
 }
 
 .gallery-image{
-    width: 20%;
+    width: 30%;
     height: calc(50%-20px);
     min-width: 300px;
     min-height: 200px;
-    margin: 10px;
+    margin: 1%;
     overflow: hidden;
 }
 
@@ -282,4 +427,96 @@ body{
     padding-left: 25px;
     padding-right: 25px;
     height: 400px;
+}
+
+footer{
+    background-color: var(--background-color);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 44%;
+}
+
+.copyright{
+    color: var(--title-color);
+    font-size: 1.4vw;
+}
+
+@media (max-width: 1000px){
+    header{
+        padding: 0 20px;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color: var(--header-color);
+        opacity: 0;
+        transition: top 0.4s, opacity 0.3s;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+    header nav ul li ul{
+        position: relative;
+        width: 100%;
+        left: 10px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s;
+    }
+
+    header .nav__toggle{
+        position: relative;
+        width: 32px;
+        height: 32px;
+    }
+    header .nav__toggle-menu, header .nav__toggle-close{
+        font-size: 1.25rem;
+        color: var(--title-color);
+        position: absolute;
+        display: grid;
+        place-items: center;
+        inset: 0;
+        cursor: pointer;
+        transition: opacity 0.1s, transform 0.4s;
+    }
+    header .nav__toggle-close{
+        opacity: 0;
+    }
+
+    .show-menu{
+        opacity: 1;
+        pointer-events: initial;
+    }
+    .show-icon .nav__toggle-menu{
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    .show-icon .nav__toggle-close{
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+
+    .show-dropdown .dropdown__arrow{
+        transform: rotate(180deg);
+    }
+}
+@media (min-width: 1000px){
+    header ul li ul{
+        position: absolute;
+        left: 0;
+        width: 200px;
+        background-color: var(--header-color);
+        display: none;
+    }
+    header ul li:hover ul{
+        display: block;
+    }
+    header ul li:hover .dropdown__arrow{
+        transform: rotate(180deg);
+    }
+    .editors_letter{
+        padding-top: 16%;
+    }
 }

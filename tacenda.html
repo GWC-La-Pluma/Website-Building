@@ -4,10 +4,6 @@
         <title>Tacenda</title>
         <link rel="stylesheet" href="style_tacenda.css">
 
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,100&display=swap" rel="stylesheet"> -->
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
@@ -17,103 +13,212 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
         <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet">
+
+        <!--navbar stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="test_navbar.js"></script> 
+
+        <!--definition stuff-->
+        <script defer src="style_tacenda.js"></script> 
     </head>
     <body>
-        <header>
-            <!--navigation bar-->
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="main_body.html">Home</a></li>
-                    <li><a href="issues_page.html">Issues</a></li>
-                    <li><a href="events_page.html">Events</a></li>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo"><img src="logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                    <a href="https://www.pinterest.com/manasiganti/la-pluma-issue-1-tacenda/" class="fa-brands fa-pinterest" id="pinterest" target="blank"></a>
+                    <a href="" class="fa-brands fa-spotify" id="spotify" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="#" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="#" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="#" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Open Mic</a></li>
+                            <li><a href="#" class ="dropdown__link">Holiday Cards</a></li>
+                            <li><a href="#" class ="dropdown__link">Singing Valentine Cards</a></li>
+                            <li><a href="#" class ="dropdown__link">Socials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Mastheads</a></li>
                 </ul>
             </nav>
         </header>
-
-        <div class="container">
-            <div class="cover_page">
-                <p>TACENDA</p>
+        <main>
+            <div class="title_page">
+                <div class="wrapper">
+                    <div class="static-text">Tacenda [Ta-sen-da] n: </div>
+                    <div class="dynamic-text"><i>things better left unsaid</i></div>
+                </div>
             </div>
-
             <div class="editors_letter">
                 <div class="title">
-                    <center><h1 style="font-size: 90px; font-weight: 200;">Letter from the Editors</h1></center>
+                    <center><h1>Letter from the Editors</h1></center>
                 </div>
+                <!--IMPORTANT: figure out how to indent the first word-->
                 <div class="letter">
-                    <p align="left" style="padding-bottom: 30px; width: 110vh;">THE MONTH OF JANUARY IS SLOW AT BEST, a sock-footed tip-toe out of first semester back into the rush and fervor of the second. 
-                    However, it’s also a month of new beginnings, the idealized thought that “this will be my year”. As we
-                    begin another 12 months, we also look back at what we leave behind. Boxes of polaroids, flowers pressed between letters,
-                    unsent messages — the things that could have been. As seniors, the editors have been poring over four years of memories, the
-                    looming threat of the future, and the unsettling realization that we are not who we used to be.</p>
-
-                    <p align="left" style="padding-bottom: 30px; width: 110vh;">It might seem confusing that the magazine is titled Issue 1, considering we’ve been around since 2009. But our archives are riddled 
-                    with holes — the La Pluma legacy has faded like an old film reel. As we began to rebuild, taking naught but our Google Drive
-                    login into the new school year, we rescheduled our meetings, reformatted our website, and refilled our pens. With a new advisor, a
-                    new team, and a fresh new perspective, we began our first in-person meetings in 2 years. As we watched our members talk late into
-                    the night on our discord server or collectively plot a pig rebellion against an evil bunny regime, a warm, close-knit community took
-                    shape.</p>
-
-                    <p align="left" style="padding-bottom: 30px; width: 110vh;">Every piece in this publication is a testament to our growth as we remember to look to the future as well as the past. Let’s dust
-                    off washed-out photos and flip through forgotten journals filled with streetlight dances, graveside confessions, and stargazing
-                    not-quite-lovers. Throughout this semester, we learned to see a blank page not as vast emptiness but as infinite possibility, and
-                    that while some things are better left unsaid, no voice should go unheard.</p>
+                        <p align="left" style="padding-bottom: 5vh">THE MONTH OF JANUARY IS SLOW AT BEST, a sock-footed tip-toe out of first semester back into the rush and fervor of the second. 
+                        However, it’s also a month of new beginnings, the idealized thought that “this will be my year”. As we
+                        begin another 12 months, we also look back at what we leave behind. Boxes of polaroids, flowers pressed between letters,
+                        unsent messages — the things that could have been. As seniors, the editors have been poring over four years of memories, the
+                        looming threat of the future, and the unsettling realization that we are not who we used to be.</p>
+    
+                        <p align="left" style="padding-bottom: 5vh">It might seem confusing that the magazine is titled Issue 1, considering we’ve been around since 2009. But our archives are riddled 
+                        with holes — the La Pluma legacy has faded like an old film reel. As we began to rebuild, taking naught but our Google Drive
+                        login into the new school year, we rescheduled our meetings, reformatted our website, and refilled our pens. With a new advisor, a
+                        new team, and a fresh new perspective, we began our first in-person meetings in 2 years. As we watched our members talk late into
+                        the night on our discord server or collectively plot a pig rebellion against an evil bunny regime, a warm, close-knit community took
+                        shape.</p>
+    
+                        <p align="left" style="padding-bottom: 5vh">Every piece in this publication is a testament to our growth as we remember to look to the future as well as the past. Let’s dust
+                        off washed-out photos and flip through forgotten journals filled with streetlight dances, graveside confessions, and stargazing
+                        not-quite-lovers. Throughout this semester, we learned to see a blank page not as vast emptiness but as infinite possibility, and
+                        that while some things are better left unsaid, no voice should go unheard.</p>
                 </div>
             </div>
+            <div class="spotify_container">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5vIEgwFrBUPS0wV4XWiF4w?utm_source=generator" width="90%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <!--Popup slideshow-->
+            <div class="popup">
+                <div class="top-bar">
+                    <p class="image-name">img1.png</p>
+                    <span class="close-btn"><img src="XButton.png" alt=""></span>
+                </div>
+    
+                <button class="arrow-btn left-arrow"><img src="arrow2.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="arrow2.png" alt=""></button>
+    
+                <img src="TacendaPics/tacenda1.png" class="large-image" alt="">
+    
+                <h1 class="index">01</h1>
+            </div>
+
+            <!--Image gallery-->
             <div class="gallery">
-                <center><h1>Gallery</h1></center>
-                <div class="gallery_row">
-                    <img src="TacendaPics/cover.png" alt="Cover">
-                    <img src="TacendaPics/tacenda1.png" alt="Page 1">
-                    <img src="TacendaPics/tacenda2.png" alt="Page 2">
-                    <img src="TacendaPics/tacenda3.png" alt="Page 3">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda1.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda4.png" alt="Page 4">
-                    <img src="TacendaPics/tacenda5.png" alt="Page 5">
-                    <img src="TacendaPics/tacenda6.png" alt="Page 6">
-                    <img src="TacendaPics/tacenda7.png" alt="Page 7">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda2.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda8.png" alt="Page 8">
-                    <img src="TacendaPics/tacenda9.png" alt="Page 9">
-                    <img src="TacendaPics/tacenda10.png" alt="Page 10">
-                    <img src="TacendaPics/tacenda11.png" alt="Page 11">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda3.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda12.png" alt="Page 12">
-                    <img src="TacendaPics/tacenda13.png" alt="Page 13">
-                    <img src="TacendaPics/tacenda14.png" alt="Page 14">
-                    <img src="TacendaPics/tacenda15.png" alt="Page 15">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda4.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda16.png" alt="Page 16">
-                    <img src="TacendaPics/tacenda17.png" alt="Page 17">
-                    <img src="TacendaPics/tacenda18.png" alt="Page 18">
-                    <img src="TacendaPics/tacenda19.png" alt="Page 19">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda5.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda20.png" alt="Page 20">
-                    <img src="TacendaPics/tacenda21.png" alt="Page 21">
-                    <img src="TacendaPics/tacenda22.png" alt="Page 22">
-                    <img src="TacendaPics/tacenda23.png" alt="Page 23">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda6.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda24.png" alt="Page 24">
-                    <img src="TacendaPics/tacenda25.png" alt="Page 25">
-                    <img src="TacendaPics/tacenda26.png" alt="Page 26">
-                    <img src="TacendaPics/tacenda27.png" alt="Page 27">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda7.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda28.png" alt="Page 28">
-                    <img src="TacendaPics/tacenda29.png" alt="Page 29">
-                    <img src="TacendaPics/tacenda30.png" alt="Page 30">
-                    <img src="TacendaPics/tacenda31.png" alt="Page 31">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda8.png" alt="" class="image">
                 </div>
-                <div class="gallery_row">
-                    <img src="TacendaPics/tacenda32.png" alt="Page 32">
-                    <img src="TacendaPics/tacenda33.png" alt="Page 33">
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda9.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda10.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda11.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda12.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda13.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda14.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda15.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda16.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda17.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda18.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda19.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda20.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda21.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda22.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda23.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda24.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda25.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda26.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda27.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda28.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda29.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda30.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda31.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda32.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="TacendaPics/tacenda33.png" alt="" class="image">
                 </div>
             </div>
-        </div>
+
+            <script src="style_tacenda.js"></script>
+        </main>
+        <footer>
+            <p class="copyright">Created by AMIBA. © 2023</p>
+        </footer>
     </body>
 </html>
