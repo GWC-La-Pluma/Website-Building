@@ -11,152 +11,183 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+        <!--navbar stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="test_navbar.js"></script> 
     </head>
     <body>
-        <header>
-            <!--navigation bar-->
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="main_body.html">Home</a></li>
-                    <li><a href="issues_page.html">Issues</a></li>
-                    <li><a href="events_page.html">Events</a></li>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../main_body.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Tacenda/tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="#" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../AboutPage/about_page.html">Mastheads</a></li>
                 </ul>
             </nav>
         </header>
-        <br/>
-        <br/>
-        <div class="title">
-            <img class="feather1" src="AboutPagePics/title_left_feather.png" alt="Left Feather">
-            <div class="mastheads">         <!--IMPORTANT: do I really have to make a whole new class here?-->
-                <center><h1 style="font-size: 120px; font-weight: 500;">Mastheads!</h1></center>
-            </div>
-            <img class="feather2" src="AboutPagePics/title_right_feather.png" alt="Right Feather">
-        </div>
-        <br/>
-        <br/>
-
-        <div class="image_row">     
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/AnvithaCropped.jpeg" alt="Anvitha"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
-                    </div>
+        <main>
+            <br/>
+            <br/>
+            <div class="title">
+                <img class="feather1" src="AboutPagePics/title_left_feather.png" alt="Left Feather">
+                <div class="mastheads">         <!--IMPORTANT: do I really have to make a whole new class here?-->
+                    <center><h1 style="font-size: 120px; font-weight: 500;">Mastheads!</h1></center>
                 </div>
-                <br>
-                <br>
-                <center><h2>Anvitha Mattapalli</h2></center>
-                <center><h2>Co-Editor in Chief</h2></center>
-                <p class="image_caption">Hi everyone! I'm Anvitha, one of your EICs. I love all things in creative writing, 
-                    and in my free time, I enjoy Speech and dance. I'm excited to work with you all!</p>
+                <img class="feather2" src="AboutPagePics/title_right_feather.png" alt="Right Feather">
             </div>
+            <br/>
+            <br/>
 
-
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/SoniaCropped.jpg" alt="Sonia"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+            <div class="image_row">     
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/AnvithaCropped.jpeg" alt="Anvitha"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <center><h2>Anvitha Mattapalli</h2></center>
+                    <center><h2>Co-Editor in Chief</h2></center>
+                    <p class="image_caption">Hi everyone! I'm Anvitha, one of your EICs. I love all things in creative writing, 
+                        and in my free time, I enjoy Speech and dance. I'm excited to work with you all!</p>
                 </div>
-                <br>
-                <br>
-                <center><h2>Sonia Verma</h2></center>
-                <center><h2>Co-Editor in Chief</h2></center>
-                <p class="image_caption">Hi everyone! I'm looking forward to another year of fun and creativity in La Pluma as your co-EIC!</p>
-            </div>
 
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/AlyssaCropped.png" alt="Alyssa"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
-                    </div>
-                </div>
-                <br>
-                <br>
-                <center><h2>Alyssa Yang</h2></center>
-                <center><h2>Managing Editor</h2></center>
-                <p class="image_caption">Hey! I’m so excited for La Pluma to be a place where our community can tell their stories. 
-                    When I’m not exploring unconventional writing styles with LP I spend too much time in dance studios, take too many naps, and play too many crosswords.</p>
-            </div>
 
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/AashiCropped.png" alt="Aashi"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/SoniaCropped.jpg" alt="Sonia"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <center><h2>Sonia Verma</h2></center>
+                    <center><h2>Co-Editor in Chief</h2></center>
+                    <p class="image_caption">Hi everyone! I'm looking forward to another year of fun and creativity in La Pluma as your co-EIC!</p>
                 </div>
-                <br>
-                <br>
-                <center><h2>Aashi Venkat</h2></center>
-                <center><h2>Lead Writing Editor</h2></center>
-                <p class="image_caption">Hi, nice to meet you! I like listening to music, taking pictures, and writing and reading poetry. 
-                    I’m so excited for the La Pluma themes this following year and can’t wait to meet you all!</p>
-            </div>
-        </div>
 
-        <div class="image_row"> 
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/DanaCropped.png" alt="Dana"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/AlyssaCropped.png" alt="Alyssa"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <center><h2>Alyssa Yang</h2></center>
+                    <center><h2>Managing Editor</h2></center>
+                    <p class="image_caption">Hey! I’m so excited for La Pluma to be a place where our community can tell their stories. 
+                        When I’m not exploring unconventional writing styles with LP I spend too much time in dance studios, take too many naps, and play too many crosswords.</p>
                 </div>
-                <br>
-                <br>
-                <center><h2>Dana Yang</h2></center>
-                <center><h2>Lead Art Editor</h2></center>
-                <p class="image_caption">Hi everyone! I’m Dana and I love drawing and listening to music in my free time. 
-                    Excited for a great year together in La Pluma!</p>
+
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/AashiCropped.png" alt="Aashi"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <center><h2>Aashi Venkat</h2></center>
+                    <center><h2>Lead Writing Editor</h2></center>
+                    <p class="image_caption">Hi, nice to meet you! I like listening to music, taking pictures, and writing and reading poetry. 
+                        I’m so excited for the La Pluma themes this following year and can’t wait to meet you all!</p>
+                </div>
             </div>
 
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/JillianCropped.jpeg" alt="Jillian"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+            <div class="image_row"> 
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/DanaCropped.png" alt="Dana"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <center><h2>Dana Yang</h2></center>
+                    <center><h2>Lead Art Editor</h2></center>
+                    <p class="image_caption">Hi everyone! I’m Dana and I love drawing and listening to music in my free time. 
+                        Excited for a great year together in La Pluma!</p>
                 </div>
-                <br>
-                <br>
-                <center><h2>Jillian Ju</h2></center>
-                <center><h2>Co-PR Lead</h2></center>
-                <p class="image_caption">Nice to meet everyone! I like writing delusional poetry about shoulder bones, spontaneous naps, 
-                    and obviously La Pluma. Can't wait to Gil-iver on our PR goals ha ha ha</p>
-            </div>
 
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/JustinCropped.png" alt="Justin"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/JillianCropped.jpeg" alt="Jillian"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <center><h2>Jillian Ju</h2></center>
+                    <center><h2>Co-PR Lead</h2></center>
+                    <p class="image_caption">Nice to meet everyone! I like writing delusional poetry about shoulder bones, spontaneous naps, 
+                        and obviously La Pluma. Can't wait to Gil-iver on our PR goals ha ha ha</p>
                 </div>
-                <br>
-                <br>
-                <center><h2>Justin Lee</h2></center>
-                <center><h2>Co-PR Lead</h2></center>
-                <p class="image_caption">Hello! I wrote a bad Harry Potter ripoff in 2nd grade and now I’m here somehow. 
-                    I like writing automobile autofiction and nonsensical poetry. Hopefully the Instagram stuff Jil-livers!</p>
-            </div>
 
-            <div class="image_container">
-                <div>
-                    <img src="AboutPagePics/AshleyCropped.png" alt="Ashley"> 
-                    <div class="feather_border">
-                        <img src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/JustinCropped.png" alt="Justin"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
                     </div>
+                    <br>
+                    <br>
+                    <center><h2>Justin Lee</h2></center>
+                    <center><h2>Co-PR Lead</h2></center>
+                    <p class="image_caption">Hello! I wrote a bad Harry Potter ripoff in 2nd grade and now I’m here somehow. 
+                        I like writing automobile autofiction and nonsensical poetry. Hopefully the Instagram stuff Jil-livers!</p>
                 </div>
-                <br>
-                <br>
-                <center><h2>Ashley Kwong</h2></center>
-                <center><h2>Secretary</h2></center>
-                <p class="image_caption">Hi everyone! I’m the treasurer for La Pluma this year. I’m also an artist, been doing it my whole life; 
-                    if you need emotional support on your art pieces feel free to ask me anytime!</p>
-            </div>            
-        </div>
+
+                <div class="image_container">
+                    <div>
+                        <img class="feathers" src="AboutPagePics/AshleyCropped.png" alt="Ashley"> 
+                        <div class="feather_border">
+                            <img class="feathers" src="AboutPagePics/FeatherCircle.png" alt="Feathers Circle" style="width:375px;height:375px;"> 
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <center><h2>Ashley Kwong</h2></center>
+                    <center><h2>Secretary</h2></center>
+                    <p class="image_caption">Hi everyone! I’m the treasurer for La Pluma this year. I’m also an artist, been doing it my whole life; 
+                        if you need emotional support on your art pieces feel free to ask me anytime!</p>
+                </div>            
+            </div>
+        </main>
     </body>
 </html>

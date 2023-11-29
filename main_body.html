@@ -13,34 +13,63 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+
+        <!--navbar stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="../Website-Building/TestingFiles/test_navbar.js"></script> 
     </head>
     <body>
-        <header>
-            <img class="logo" src="logo.jpg" alt="logo">
-            <!--navigation bar-->
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="AboutPage/about_page.html">Mastheads</a></li>
-                    <li><a href="issues_page.html">Issues</a></li>
-                    <li><a href="events_page.html">Events</a></li>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo"><img src="../Website-Building/logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Website-Building/Tacenda/tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Website-Building/Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Website-Building/Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="../Website-Building/Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                            <li><a href="#" class ="dropdown__link">Crack</a></li>
+                            <li><a href="#" class ="dropdown__link">Halloween</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="#" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Website-Building/AboutPage/about_page.html">Mastheads</a></li>
                 </ul>
             </nav>
         </header>
-
-        <div class="cover_page">
-            <div class="title">
-                <p>La Pluma</p>
+        <main>
+            <div class="cover_page">
+                <div class="title">
+                    <p>La Pluma</p>
+                </div>
+                <div class="caption">
+                    <p>Monta Vista’s Literary and Art Magazine</p>
+                </div>
+    
+                <div class="description">
+                    <p>This is where more example information will go.</p>
+                </div>
             </div>
-            <div class="caption">
-                <p>Monta Vista’s Literary and Art Magazine</p>
-            </div>
-
-            <div class="description">
-                <p>This is where more example information will go.</p>
-            </div>
-
-        </div>
-
+        </main>
         <footer>
             <p>Created by MIA. © 2023</p>
         </footer>
