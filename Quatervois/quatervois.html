@@ -74,9 +74,25 @@
                 <h1 class="index">01</h1>
             </div>
             
-            <div class="title_page"></div>
-            <div class="editors_letter">
+            <div class="t">
                 <div class="title">
+                    <div class="title_page">
+                        <img src="QuatervoisPics/words.png" id="words">
+                        <img src="QuatervoisPics/mountains.png" id="mountains">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.85+100+'px';
+                })
+            </script>
+            </div>
+            <div class="editors_letter">
+                <div class="letter_title">
                     <center><h1>Letter from the Editors</h1></center>
                 </div>
                 <!--IMPORTANT: figure out how to indent the first word-->

@@ -44,6 +44,7 @@ body{
 /*header*/
 header{
     position: absolute;
+    z-index: 1;
     width: 100%;
     min-height: 60px;
     background-color: var(--header-color);
@@ -103,19 +104,19 @@ header ul{
     position: relative;
 }
 
-header ul li{
+.header ul li{
     position: relative;
     list-style: none;
     float: left;
 }
 
-header ul li .dropdown__arrow{
+.header ul li .dropdown__arrow{
     font-size: 1.2em;
     font-weight: initial;
     transition: transform 0.4s;
 }
 
-header ul li a{
+.header ul li a{
     color: var(--title-color);
     font-size: 1em;
     padding: 20px 25px;
@@ -124,33 +125,78 @@ header ul li a{
     justify-content: space-between;
 }
 
-header ul li a:hover{
+.header ul li a:hover{
     background-color: var(--first-color-lighten);
 }
 
-header ul li ul{
+.header ul li ul{
     position: absolute;
     left: 0;
     width: 200px;
     background-color: var(--header-color);
 }
 
-header ul li ul li{
+.header ul li ul li{
     position: relative;
     width: 100%;
     border: 1px solid rgba(0,0,0,0.2);
 }
 
 header ul li ul li a{
-    color: var(--header-text-color);;
+    color: var(--header-text-color);
+}
+
+.t{
+    padding-top: 60px;
+}
+
+.title{
+    background-image: url("QuatervoisPics/title_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title_page{
-    padding-top: 100%;
-    background: url("QuatervoisPics/cover_div_background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    padding-top: 120%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title_page::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#100d30,transparent);
+    z-index: 1000;
+}
+
+.title_page img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.title_page img#words{
+    top: 10%;
+    left: 10%;
+    max-width: 80%;
+    max-height: 15%;
+}
+
+.title_page img#mountains{
+    object-fit: contain;
+    top: 14%;
 }
 
 .editors_letter{
@@ -162,7 +208,7 @@ header ul li ul li a{
     padding-top: 13%;
 }
 
-.title{
+.letter_title{
     font-family: 'Savoye LET', sans-serif;
     color: var(--text-color);
     font-size: 5vw;
