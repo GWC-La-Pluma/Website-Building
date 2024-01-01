@@ -150,6 +150,10 @@ header ul li ul li a{
     color: var(--header-text-color);
 }
 
+.dropdown__container {
+    z-index: 1;
+}
+
 .nav_links li a{
     transition: all 0.3s ease 0s;
 }

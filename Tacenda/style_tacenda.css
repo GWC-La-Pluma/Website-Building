@@ -4,10 +4,12 @@
 
   /*colors*/
   --first-color: hsl(220,68%,54%);
-  --first-color-lighten: hsl(218, 59%, 18%);
+  /* --first-color-lighten: hsl(218, 59%, 18%); */
+  --first-color-lighten: rgb(71, 111, 143);
   --title-color: hsl(216, 100%, 99%);
   --text-color: hsl(220, 7%, 67%);
   --header-color: hsl(217, 78%, 7%);
+  --header-text-color: rgb(166,197,213);
 
   /*font*/
   /*--body-font: */
@@ -139,7 +141,8 @@ header ul li ul li{
 }
 
 header ul li ul li a{
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--header-text-color);
 }
 
 .title_page{
