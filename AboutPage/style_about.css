@@ -40,7 +40,9 @@ body{
     /* background-color: rgb(232, 196, 167); */
     /* background-color: rgb(226, 184, 166); */
     /* background-color: rgb(113, 177, 176); */
-    background-color: rgb(158, 199, 198);
+    /* background-color: rgb(158, 199, 198); */
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
     /* background-color: rgb(229, 205, 160); */
 }
 
@@ -185,13 +187,16 @@ header ul li ul li a{
 
 /*IMPORTANT: see why changing the font weight isn't working from here and I'm having to use in-line*/
 .mastheads{
-    font-family: 'Savoye LET', sans-serif;
-    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+    /* font-weight: 400; */
+    /* font-size: 60px; */
+    /* background-color: blue; */
 }
 
 .image_row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -296,5 +301,17 @@ header ul li ul li a{
     }
     header ul li:hover .dropdown__arrow{
         transform: rotate(180deg);
+    }
+
+    footer{
+        background-color: powderblue;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 44%;
+    }
+
+    .copyright{
+        color: black;
+        font-size: 1.4vw;
     }
 }

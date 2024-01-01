@@ -408,8 +408,8 @@ footer{
 }
 
 .copyright{
-    color: var(--title-color);
-    font-size: 1.4vw;
+  color: var(--title-color);
+  font-size: 1.4vw;
 }
 
 @media (max-width: 1000px){

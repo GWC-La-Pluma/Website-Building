@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current Events</title>
+        <link rel="stylesheet" href="style_current_events.css">
+
+        <!--navbar stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="test_navbar.js"></script> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <main>
+            <div class="background_container">
+                <img src="CurrentPics/events_background.png" onload="this.parentNode.style.height = this.height + 'px';" style="max-width: 100%; max-height: 100%; height: auto;">
+                <div class="top_part"></div>
+                <div class="behind_the_scenes">
+                    <img src="CurrentPics/BehindTheScenesPics/img1.png">
+                    <img src="CurrentPics/BehindTheScenesPics/img2.png">
+                    <img src="CurrentPics/BehindTheScenesPics/img3.JPG">
+                </div>
+                <div class="holiday_cards">
+                    <img src="CurrentPics/HolidayCardsPics/img1.png">
+                    <img src="CurrentPics/HolidayCardsPics/img2.png">
+                    <img src="CurrentPics/HolidayCardsPics/img3.jpg">
+                </div>
+                <div class="open_mic">
+                    <img src="CurrentPics/OpenMicPics/img1.jpg">
+                    <img src="CurrentPics/OpenMicPics/img2.jpg">
+                    <img src="CurrentPics/OpenMicPics/img3.jpg">
+                    <img src="CurrentPics/OpenMicPics/img4.jpg">
+                    <img src="CurrentPics/OpenMicPics/img5.jpg">
+                    <img src="CurrentPics/OpenMicPics/img6.jpg">
+                    <img src="CurrentPics/OpenMicPics/img7.jpg">
+                    <img src="CurrentPics/OpenMicPics/img8.jpeg">
+                    <img src="CurrentPics/OpenMicPics/img9.jpeg">
+                </div>
+            </div>
+        </main>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo"><img src="../../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                    <a href="https://www.pinterest.com/manasiganti/la-pluma-issue-1-tacenda/" class="fa-brands fa-pinterest" id="pinterest" target="blank"></a>
+                    <a href="" class="fa-brands fa-spotify" id="spotify" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../main_body.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="#" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../AboutPage/about_page.html">Mastheads</a></li>
+                </ul>
+            </nav>
+        </header>
+        <footer>
+            <p class="copyright">Created by AMIBA. © 2023</p>
+        </footer>
+    </body>
+</html>
