@@ -73,7 +73,26 @@
                 <!-- image-index -->
                 <h1 class="index">01</h1>
             </div>
-            <div class="title_page"></div>
+            
+            <div class="t">
+                <div class="title">
+                    <div class="title_page">
+                        <img src="KalopsiaPics/title_words.png" id="words">
+                        <img src="KalopsiaPics/title_fairy.png" id="fairy">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+                let fairy=document.getElementById('fairy');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.65+100+'px';
+                    fairy.style.top=-1*value*0.05+'px';
+                })
+            </script>
+
             <div class="def_page">
                 <div class="wrapper">
                     <div class="static-text">Kalopsia [Ku] n: </div>
