@@ -90,6 +90,7 @@ header .logo{
     display: inline-flex;
     align-items: center;
     column-gap: 0.25em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 header .logoSocials{
