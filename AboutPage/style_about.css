@@ -170,9 +170,17 @@ header ul li ul li a{
 
 .feather1{
     position: relative;
-    top: -3vh;
-    width: 23vh;
-    height: 23vh;
+    /* old: top: -3vh */
+    top: 100px; /* width and height: 23vh*/
+    /* left: 10%; */
+    /* left: max(1%, 100px); */
+    /* left: 0; */
+    /* padding-left: 100px; */
+    width: 11%; 
+    height: 11%;
+    min-width: 130px;
+    min-height: 130px;
+    /* height: 20%; 23vh */
 }
 
 .feather2{
@@ -183,18 +191,19 @@ header ul li ul li a{
 }
 
 .title{
-    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 5%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: blue;
+    /* position: absolute; */
 }
 
-/*IMPORTANT: see why changing the font weight isn't working from here and I'm having to use in-line*/
 .mastheads{
     font-family: 'Cormorant Garamond', serif;
-    /* font-weight: 400; */
-    /* font-size: 60px; */
-    /* background-color: blue; */
+    padding-top: 100px;
 }
 
 .image_row{
