@@ -47,11 +47,14 @@ header{
   width: 100%;
   min-height: 60px;
   background-color: var(--header-color);
-  padding: 0 20px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+}
+
+.header {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #instagram, #gmail, #pinterest, #spotify{
@@ -82,8 +85,8 @@ header{
 }
 
 @keyframes animate_logo{
-  from{ filter: hue-rotate(0deg); }
-  to{ filter: hue-rotate(45deg); }
+  from{ filter: hue-rotate(20deg); }
+  to{ filter: hue-rotate(40deg); }
 }
 
 header .logo{
@@ -118,8 +121,8 @@ header ul li .dropdown__arrow{
 
 header ul li a{
   color: var(--title-color);
-  font-size: 1em;
-  padding: 20px 25px;
+  font-size: 1.2em;
+  padding: 16px 25px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -143,7 +146,6 @@ header ul li ul li{
 }
 
 header ul li ul li a{
-  /* color: var(--text-color); */
   color: var(--header-text-color);
 }
 
