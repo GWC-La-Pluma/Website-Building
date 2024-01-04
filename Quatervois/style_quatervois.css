@@ -3,13 +3,12 @@
     --header-height: 3.5rem;
 
     /*colors*/
-    /* --first-color-lighten: rgb(32,42,90); */
     --first-color-lighten: rgb(71, 111, 143);
     --title-color: hsl(216, 100%, 99%);
-    --text-color: rgb(103,121,169);
+    --header-text-color: rgb(251, 254, 255);
+    --text-color: rgb(140,158,204);
     --header-color: hsl(217, 78%, 7%);
-    --background-color: rgb(23,23,67);
-    --header-text-color: rgb(166,197,213);
+    --background-color: rgb(205, 227, 241);
 
     /*font*/
     /*--body-font: */

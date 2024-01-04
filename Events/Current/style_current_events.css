@@ -4,12 +4,13 @@
 
   /*colors*/
   --first-color: hsl(220,68%,54%);
-  /* --first-color-lighten: hsl(218, 59%, 18%); */
+  /*colors*/
   --first-color-lighten: rgb(71, 111, 143);
   --title-color: hsl(216, 100%, 99%);
-  --text-color: hsl(220, 7%, 67%);
+  --header-text-color: rgb(251, 254, 255);
+  --text-color: rgb(140,158,204);
   --header-color: hsl(217, 78%, 7%);
-  --header-text-color: rgb(166,197,213);
+  --background-color: rgb(205, 227, 241);
 
   /*font*/
   /*--body-font: */
