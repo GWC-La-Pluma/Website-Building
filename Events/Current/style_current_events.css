@@ -5,12 +5,12 @@
   /*colors*/
   --first-color: hsl(220,68%,54%);
   /*colors*/
-  --first-color-lighten: rgb(71, 111, 143);
-  --title-color: hsl(216, 100%, 99%);
-  --header-text-color: rgb(251, 254, 255);
-  --text-color: rgb(140,158,204);
-  --header-color: hsl(217, 78%, 7%);
-  --background-color: rgb(205, 227, 241);
+    --first-color-lighten: rgb(71, 111, 143);
+    --title-color: hsl(216, 100%, 99%);
+    --header-text-color: rgb(251, 254, 255);
+    --text-color: rgb(140,158,204);
+    --header-color: hsl(217, 78%, 7%);
+    --background-color: rgb(205, 227, 241);
 
   /*font*/
   /*--body-font: */
@@ -80,7 +80,7 @@ main {
   width: 500px;
   height: 400px;
   padding-right: 50px;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 .holiday_cards {
@@ -137,6 +137,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 #instagram, #gmail, #pinterest, #spotify{

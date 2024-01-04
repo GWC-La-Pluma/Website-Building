@@ -175,7 +175,6 @@ footer {
 .la_pluma_images img {
     width: calc((100vw - 10px) / 3);
     height: auto;
-    min-width: 350px;
 }
 
 .caption p {
@@ -271,6 +270,15 @@ footer {
 
     .show-dropdown .dropdown__arrow{
         transform: rotate(180deg);
+    }
+
+    .la_pluma_images {
+        gap: 0%;
+    }
+
+    .la_pluma_images img {
+        width: 100%;
+        height: 100%;
     }
 }
 @media (min-width: 1000px){
