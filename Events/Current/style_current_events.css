@@ -49,80 +49,102 @@ main {
 
 .background_container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .top_part {
-  position: absolute;
+  background-image: url("CurrentPics/events_title.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  padding-top: 99%;
   /* background-color: blue; */
-  top: 0%;
   left: 0%;
-  width: 100%;
-  height: 22%;
+}
+
+.bts_title{
+  background-image: url("CurrentPics/events_bts.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  padding-top: 15%;
 }
 
 .behind_the_scenes {
   /* background-color: red; */
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-
-  top: 22%;
   left: 0%;
-  width: 100%;
-  height: 18%;
 }
 
 .behind_the_scenes img {
   width: 500px;
   height: 400px;
-  padding-right: 50px;
-  padding-top: 50px;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.holiday_title{
+  background-image: url("CurrentPics/events_holiday.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  padding-top: 14%;
 }
 
 .holiday_cards {
   /* background-color: black; */
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 
-  top: 40%;
   left: 0%;
-  width: 100%;
-  height: 25%;
 }
 
 .holiday_cards img {
   width: 500px;
   height: 400px;
-  padding-right: 50px;
-  padding-top: 50px;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.open_title{
+  background-image: url("CurrentPics/events_open.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  padding-top: 12%;
 }
 
 .open_mic {
   /* background-color: black; */
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-
-  top: 65%;
   left: 0%;
-  width: 100%;
-  height: 35%;
 }
 
 .open_mic img {
   width: 400px;
   height: 500px;
-  padding-right: 50px;
-  padding-top: 50px;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 
 /*header*/
