@@ -154,12 +154,12 @@ header ul li ul li a{
 }
 
 .title{
-    font-family: 'Savoye LET', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--title-color);
-    font-size: 14vw;
+    font-size: 10vw;
     text-shadow: 0.1vw 0.1vw 0.1vw black;
 
-    padding-left: 27%;
+    padding-left: 11%;
     padding-bottom: 52%;
 }
 

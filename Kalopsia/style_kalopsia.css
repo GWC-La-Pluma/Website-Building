@@ -209,6 +209,8 @@ header ul li ul li a{
 
 .static-text, .dynamic-text{
     padding-bottom: 5%;
+    font-family: 'Cormorant Garamond', serif;
+    color: #17246A;
 }
 
 .editors_letter{
@@ -223,11 +225,11 @@ header ul li ul li a{
 }
 
 .letter_title{
-    padding-top: 4%;
-    font-family: 'Savoye LET', sans-serif;
+    padding-top: 6%;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--header-color);
-    font-size: 14vw;
-    padding-left: 9%;
+    font-size: 8vw;
+    padding-left: 7%;
 }
 
 .letter{
@@ -236,10 +238,10 @@ header ul li ul li a{
     justify-content: center;
 
     text-indent: 2vw;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: var(--text-color);
     max-width: 70%;
-    font-size: 2vw;
+    font-size: 1.8vw;
 
     padding-left: 10%;
     padding-top: 3%;
@@ -248,10 +250,10 @@ header ul li ul li a{
 
 .gallery_title{
     font-size: 7vw;
-    font-family: 'Savoye LET', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--header-color);
 
-    padding-left: 18%;
+    padding-left: 16%;
     padding-bottom: 4%;
 }
 

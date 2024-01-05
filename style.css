@@ -45,6 +45,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
 
 .header {
@@ -162,6 +163,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
 }
 
 .la_pluma_images {
@@ -175,6 +177,29 @@ footer {
 .la_pluma_images img {
     width: calc((100vw - 10px) / 3);
     height: auto;
+}
+
+.animation {
+    /* justify-content: center; */
+    position: absolute; 
+    top: 60px; 
+    /* width: 100vw;
+    height: 100vw; */
+    width: 100%;
+    z-index: 1; 
+    padding-left: 20%;
+}
+
+.falling_feather {
+    width: 80%;
+    height: auto;
+    z-index: 2; 
+    opacity: 0.7;
+    animation: falling_feather 0s linear 5s forwards;
+}
+
+@keyframes falling_feather {
+    to {opacity:0;}
 }
 
 .caption p {

@@ -37,7 +37,8 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-color: #120b33;
 } 
 
 /*header*/

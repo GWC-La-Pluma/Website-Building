@@ -170,6 +170,8 @@ header ul li ul li a{
   position: relative;
   width: max-content;
   font-size: 2vw;
+  font-family: 'Cormorant Garamond', serif;
+  color: #000000;
 }
 
 .dynamic-text::before,
@@ -217,9 +219,10 @@ header ul li ul li a{
 }
 
 .title{
-    font-family: 'Savoye LET', sans-serif;
-    color: var(--header-color);
-    font-size: 5vw;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--header-color);
+  font-size: 5vw;
+  padding-bottom: 25px;
 }
 
 .letter{
@@ -227,8 +230,8 @@ header ul li ul li a{
     flex-direction: column;
     justify-content: center;
 
-    text-indent: 2vw;
-    font-family: 'Josefin Sans', sans-serif;
+    text-indent: 4vw;
+    font-family: 'PT Sans', sans-serif;
     color: var(--header-color);
     max-width: 79%;
     font-size: 2vw;
