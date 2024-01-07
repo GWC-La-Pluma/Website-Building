@@ -36,7 +36,7 @@
 }
 
 body{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     /* background-color: var(--background-color); */
     background-color: #120b33;
 } 
@@ -213,9 +213,8 @@ header ul li ul li a{
 }
 
 .letter_title{
-    font-family: 'Savoye LET', sans-serif;
     color: var(--text-color);
-    font-size: 5vw;
+    font-size: 4.3vw;
 }
 
 .letter{
@@ -224,7 +223,6 @@ header ul li ul li a{
     justify-content: center;
 
     text-indent: 2vw;
-    font-family: 'Josefin Sans', sans-serif;
     color: var(--text-color);
     max-width: 90%;
     font-size: 2vw;
