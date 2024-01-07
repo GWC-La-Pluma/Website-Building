@@ -35,6 +35,12 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /*header*/
 header{
     position: absolute;
@@ -152,11 +158,21 @@ header ul li ul li a{
     color: #aaa9d3;
 }
 
-footer {
+/* footer {
+    margin-top: auto;
     line-height: 40px;
     display: flex;
     justify-content: center;
     font-size: 1em;
+    height: 40px;
+    z-index: 30;
+} */
+
+footer{
+    background-color: rgb(50,90,120);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 44%;
 }
 
 .main_page {
@@ -325,7 +341,7 @@ footer {
 .copyright{
     color: black;
     font-size: 1.4vw;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /*#intro{

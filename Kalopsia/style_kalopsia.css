@@ -449,15 +449,18 @@ header ul li ul li a{
 }
 
 footer{
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-color: white;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 44%;
 }
 
 .copyright{
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    color: black;
     font-size: 1.4vw;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 @media (max-width: 1000px){

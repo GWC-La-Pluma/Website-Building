@@ -487,8 +487,10 @@ footer{
 }
 
 .copyright{
-    color: var(--title-color);
+    /* color: var(--title-color); */
+    color: black;
     font-size: 1.4vw;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 @media (max-width: 1000px){
