@@ -194,7 +194,7 @@ footer {
     width: 80%;
     height: auto;
     z-index: 2; 
-    opacity: 0.7;
+    opacity: 0.8;
     animation: falling_feather 0s linear 5s forwards;
 }
 
