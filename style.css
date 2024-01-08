@@ -45,7 +45,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
 }
 
 .header {
@@ -142,14 +142,6 @@ header ul li ul li{
 
 header ul li ul li a{
     color: var(--header-text-color);
-}
-
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
-    color: #aaa9d3;
 }
 
 .main_page {
