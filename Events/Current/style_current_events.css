@@ -261,14 +261,14 @@ header ul li ul li a{
 
 /* Footer stuff */
 footer{
-    background-color: black;
+    background-color: white;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 44%;
 }
 
 .copyright{
-    color: var(--title-color);
+    color: black;
     font-size: 1.4vw;
     font-family: 'Cormorant Garamond', serif;
 }

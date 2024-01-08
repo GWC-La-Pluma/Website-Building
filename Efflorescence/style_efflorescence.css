@@ -370,14 +370,14 @@ header ul li ul li a{
 }
 
 footer{
-    background-color: var(--background-color);
+    background-color: white;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 44%;
 }
 
 .copyright{
-    color: white;
+    color: black;
     font-size: 1.4vw;
 }
 
