@@ -4,10 +4,13 @@
 
   /*colors*/
   --first-color: hsl(220,68%,54%);
-  --first-color-lighten: hsl(218, 59%, 18%);
+  /*colors*/
+  --first-color-lighten: rgb(71, 111, 143);
   --title-color: hsl(216, 100%, 99%);
-  --text-color: hsl(220, 7%, 67%);
+  --header-text-color: rgb(251, 254, 255);
+  --text-color: rgb(140,158,204);
   --header-color: hsl(217, 78%, 7%);
+  --background-color: rgb(205, 227, 241);
 
   /*font*/
   /*--body-font: */
@@ -44,10 +47,14 @@ header{
   width: 100%;
   min-height: 60px;
   background-color: var(--header-color);
-  padding: 0 20px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #instagram, #gmail, #pinterest, #spotify{
@@ -78,8 +85,8 @@ header{
 }
 
 @keyframes animate_logo{
-  from{ filter: hue-rotate(0deg); }
-  to{ filter: hue-rotate(45deg); }
+  from{ filter: hue-rotate(20deg); }
+  to{ filter: hue-rotate(40deg); }
 }
 
 header .logo{
@@ -114,8 +121,8 @@ header ul li .dropdown__arrow{
 
 header ul li a{
   color: var(--title-color);
-  font-size: 1em;
-  padding: 20px 25px;
+  font-size: 1.2em;
+  padding: 16px 25px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -139,7 +146,7 @@ header ul li ul li{
 }
 
 header ul li ul li a{
-  color: var(--text-color);
+  color: var(--header-text-color);
 }
 
 .title_page{
@@ -165,6 +172,8 @@ header ul li ul li a{
   position: relative;
   width: max-content;
   font-size: 2vw;
+  font-family: 'Cormorant Garamond', serif;
+  color: #000000;
 }
 
 .dynamic-text::before,
@@ -212,9 +221,10 @@ header ul li ul li a{
 }
 
 .title{
-    font-family: 'Savoye LET', sans-serif;
-    color: var(--header-color);
-    font-size: 5vw;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--header-color);
+  font-size: 5vw;
+  padding-bottom: 25px;
 }
 
 .letter{
@@ -222,8 +232,8 @@ header ul li ul li a{
     flex-direction: column;
     justify-content: center;
 
-    text-indent: 2vw;
-    font-family: 'Josefin Sans', sans-serif;
+    text-indent: 4vw;
+    font-family: 'PT Sans', sans-serif;
     color: var(--header-color);
     max-width: 79%;
     font-size: 2vw;
@@ -408,8 +418,9 @@ footer{
 }
 
 .copyright{
-    color: var(--title-color);
-    font-size: 1.4vw;
+  color: var(--title-color);
+  font-size: 1.4vw;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 @media (max-width: 1000px){

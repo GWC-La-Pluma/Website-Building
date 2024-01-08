@@ -1,5 +1,3 @@
-alert("click on the pinterest dumbass");
-
 const images =[...document.querySelectorAll('.image')];
 
 // popup

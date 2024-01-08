@@ -4,20 +4,30 @@
         <title>Tacenda</title>
         <link rel="stylesheet" href="style_tacenda.css">
 
+        <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 
-        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet">
+        <!-- Font for the words in the letter from the editors -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
         <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+        <!--navbar icons-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
         <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
-        <script defer src="test_navbar.js"></script> 
+        <script defer src="../TestingFiles/test_navbar.js"></script> 
 
         <!--definition stuff-->
         <script defer src="style_tacenda.js"></script> 
@@ -25,7 +35,7 @@
     <body>
         <header class="header">
             <div class="logoSocials">
-                <a class="logo"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <a class="logo" href="../main_body.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
                 <div class="socials">
                     <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
                     <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
@@ -47,11 +57,13 @@
                             <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
                             <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
                             <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                            <li><a href="#" class ="dropdown__link">Crack</a></li>
+                            <li><a href="#" class ="dropdown__link">Halloween</a></li>
                         </ul>
                     </li>
                     <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
                         <ul class="dropdown__container">
-                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="../Events/Current/current_events.html" class ="dropdown__link">Current</a></li>
                             <li><a href="#" class ="dropdown__link">Archive</a></li>
                         </ul>
                     </li>
@@ -62,15 +74,14 @@
         <main>
             <div class="title_page">
                 <div class="wrapper">
-                    <div class="static-text">Tacenda [Ta-sen-da] n: </div>
+                    <div class="static-text">Tacenda [Ta-'chen-da] n: </div>
                     <div class="dynamic-text"><i>things better left unsaid</i></div>
                 </div>
             </div>
             <div class="editors_letter">
                 <div class="title">
-                    <center><h1>Letter from the Editors</h1></center>
+                    <center><h4 style="font-weight: 400;">LETTER FROM THE EDITORS</h4></center>
                 </div>
-                <!--IMPORTANT: figure out how to indent the first word-->
                 <div class="letter">
                         <p align="left" style="padding-bottom: 5vh">THE MONTH OF JANUARY IS SLOW AT BEST, a sock-footed tip-toe out of first semester back into the rush and fervor of the second. 
                         However, it’s also a month of new beginnings, the idealized thought that “this will be my year”. As we

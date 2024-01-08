@@ -5,11 +5,11 @@
     /*colors*/
     --first-color-lighten: rgb(71, 111, 143);
     --title-color: hsl(216, 100%, 99%);
-    --header-text-color: rgb(166,197,213);
+    --header-text-color: rgb(251, 254, 255);
     --text-color: rgb(140,158,204);
     --header-color: hsl(217, 78%, 7%);
     --background-color: rgb(205, 227, 241);
-
+    
     /*font*/
     /*--body-font: */
     --normal-font-size: 1rem;
@@ -40,7 +40,9 @@ body{
     /* background-color: rgb(232, 196, 167); */
     /* background-color: rgb(226, 184, 166); */
     /* background-color: rgb(113, 177, 176); */
-    background-color: rgb(158, 199, 198);
+    /* background-color: rgb(158, 199, 198); */
+    background-color: white;
+    font-family: 'Cormorant Garamond', serif;
     /* background-color: rgb(229, 205, 160); */
 }
 
@@ -50,10 +52,14 @@ header{
     width: 100%;
     min-height: 60px;
     background-color: var(--header-color);
-    padding: 0 20px;
+    padding: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header {
+    font-family: 'Cormorant Garamond', serif;
 }
 
 #instagram, #gmail, #pinterest, #spotify{
@@ -84,8 +90,8 @@ header{
 }
 
 @keyframes animate_logo{
-    from{ filter: hue-rotate(300deg); }
-    to{ filter: hue-rotate(360deg); }
+    from{ filter: hue-rotate(20deg); }
+    to{ filter: hue-rotate(40deg); }
 }
 
 header .logo{
@@ -120,8 +126,8 @@ header ul li .dropdown__arrow{
 
 header ul li a{
     color: var(--title-color);
-    font-size: 1em;
-    padding: 20px 25px;
+    font-size: 1.2em;
+    padding: 16px 25px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -148,6 +154,10 @@ header ul li ul li a{
     color: var(--header-text-color);
 }
 
+.dropdown__container {
+    z-index: 1;
+}
+
 .nav_links li a{
     transition: all 0.3s ease 0s;
 }
@@ -164,9 +174,17 @@ header ul li ul li a{
 
 .feather1{
     position: relative;
-    top: -3vh;
-    width: 23vh;
-    height: 23vh;
+    /* old: top: -3vh */
+    top: 100px; /* width and height: 23vh*/
+    /* left: 10%; */
+    /* left: max(1%, 100px); */
+    /* left: 0; */
+    /* padding-left: 100px; */
+    width: 11%; 
+    height: 11%;
+    min-width: 130px;
+    min-height: 130px;
+    /* height: 20%; 23vh */
 }
 
 .feather2{
@@ -177,21 +195,25 @@ header ul li ul li a{
 }
 
 .title{
-    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 5%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: blue;
+    /* position: absolute; */
 }
 
-/*IMPORTANT: see why changing the font weight isn't working from here and I'm having to use in-line*/
 .mastheads{
-    font-family: 'Savoye LET', sans-serif;
-    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 100px;
 }
 
 .image_row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -296,5 +318,17 @@ header ul li ul li a{
     }
     header ul li:hover .dropdown__arrow{
         transform: rotate(180deg);
+    }
+
+    footer{
+        background-color: powderblue;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 44%;
+    }
+
+    .copyright{
+        color: black;
+        font-size: 1.4vw;
     }
 }
