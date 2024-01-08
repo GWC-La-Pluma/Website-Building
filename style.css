@@ -242,7 +242,7 @@ footer{
   font-size: 1.4vw;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     header{
         padding: 0 20px;
     }
