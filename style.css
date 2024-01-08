@@ -35,12 +35,6 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 /*header*/
 header{
     position: absolute;
@@ -158,28 +152,10 @@ header ul li ul li a{
     color: #aaa9d3;
 }
 
-/* footer {
-    margin-top: auto;
-    line-height: 40px;
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
-    height: 40px;
-    z-index: 30;
-} */
-
-footer{
-    background-color: rgb(50,90,120);
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 44%;
-}
-
 .main_page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
 }
 
 .la_pluma_images {
@@ -208,9 +184,9 @@ footer{
 
 .falling_feather {
     width: 80%;
-    height: auto;
+    height: 100%;
     z-index: 2; 
-    opacity: 0.8;
+    opacity: 0.7;
     animation: falling_feather 0s linear 5s forwards;
 }
 
@@ -219,9 +195,9 @@ footer{
 }
 
 .caption p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.2em;
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
 }
@@ -233,8 +209,8 @@ footer{
 }
 
 .pinterest img {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .definition {
@@ -250,6 +226,20 @@ footer{
     text-align: right;
     color: white;
     font-family: 'PT Sans', sans-serif;
+}
+
+/* Footer stuff */
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 44%;
+}
+
+.copyright{
+  color: var(--title-color);
+  font-size: 1.4vw;
 }
 
 @media (max-width: 900px){
@@ -336,12 +326,6 @@ footer{
     header ul li:hover .dropdown__arrow{
         transform: rotate(180deg);
     }
-}
-
-.copyright{
-    color: black;
-    font-size: 1.4vw;
-    font-family: 'Cormorant Garamond', serif;
 }
 
 /*#intro{
