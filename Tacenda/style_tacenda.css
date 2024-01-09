@@ -39,6 +39,7 @@
 
 body{
   font-family: 'Josefin Sans', sans-serif;
+  max-width: 100vw;
 } 
 
 /*header*/
