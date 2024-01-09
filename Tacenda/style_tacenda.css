@@ -51,6 +51,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .header {
@@ -154,6 +155,7 @@ header ul li ul li a{
   padding-top: 100%;
   width: 100%;
   height: 100%;
+  position: relative;
   background: url("TacendaPics/cover_div_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
