@@ -489,7 +489,7 @@ footer{
     transform: rotate(180deg);
   }
   .title_page{
-    max-width: 10%;
+    width: 100px;
   }
 }
 @media (min-width: 1000px){
