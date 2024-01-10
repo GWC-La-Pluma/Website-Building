@@ -41,7 +41,7 @@ body{
     /* background-color: rgb(226, 184, 166); */
     /* background-color: rgb(113, 177, 176); */
     /* background-color: rgb(158, 199, 198); */
-    background-color: white;
+    background-color: rgba(195, 216, 255, 0.895);
     font-family: 'Cormorant Garamond', serif;
     /* background-color: rgb(229, 205, 160); */
 }
@@ -172,42 +172,64 @@ header ul li ul li a{
     border-radius: 50%;
 }
 
+/* .title_elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
 .feather1{
-    position: relative;
-    /* old: top: -3vh */
-    top: 100px; /* width and height: 23vh*/
-    /* left: 10%; */
-    /* left: max(1%, 100px); */
-    /* left: 0; */
-    /* padding-left: 100px; */
+    /* position: relative;
+    top: 100px;
     width: 11%; 
     height: 11%;
     min-width: 130px;
-    min-height: 130px;
-    /* height: 20%; 23vh */
+    min-height: 130px; */
+    width: 150px; 
+    height: 150px;
+    /* background-color: yellow; */
+    /* padding-left: 5%; */
 }
 
 .feather2{
-    position: relative;
+    /* position: relative;
     top: -3vh;
     width: 23vh;
-    height: 23vh;
-}
-
-.title{
-    width: 100%;
-    height: 100%;
-    /* padding-top: 5%; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: blue;
-    /* position: absolute; */
+    height: 23vh; */
+    width: 150px; 
+    height: 150px;
+    /* background-color: yellow; */
+    /* padding-right: 5%; */
 }
 
 .mastheads{
     font-family: 'Cormorant Garamond', serif;
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    /* padding-top: 5%; */
+    /* background-color: red; */
+}
+
+.mastheads_text{
+    font-size: 100px; 
+    font-weight: 300;
+}
+
+.title{
+    /* width: 100%;
+    height: 100%; */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* background-color: blue; */
+    /* position: absolute; */
+
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+
+    /* padding-left: 23%;
+    padding-right: 23%; */
 }
 
 .image_row{
