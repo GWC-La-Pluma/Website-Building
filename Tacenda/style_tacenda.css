@@ -498,9 +498,6 @@ footer{
   .show-dropdown .dropdown__arrow{
     transform: rotate(180deg);
   }
-  .title_page{
-    width: 100px;
-  }
 }
 @media (min-width: 1000px){
   header ul li ul{
