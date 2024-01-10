@@ -37,13 +37,8 @@
 
 
 body{
-    /* background-color: rgb(232, 196, 167); */
-    /* background-color: rgb(226, 184, 166); */
-    /* background-color: rgb(113, 177, 176); */
-    /* background-color: rgb(158, 199, 198); */
-    background-color: rgba(195, 216, 255, 0.895);
+    background-color: white;
     font-family: 'Cormorant Garamond', serif;
-    /* background-color: rgb(229, 205, 160); */
 }
 
 /*header*/
@@ -172,41 +167,18 @@ header ul li ul li a{
     border-radius: 50%;
 }
 
-/* .title_elements{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} */
-
 .feather1{
-    /* position: relative;
-    top: 100px;
-    width: 11%; 
-    height: 11%;
-    min-width: 130px;
-    min-height: 130px; */
     width: 150px; 
     height: 150px;
-    /* background-color: yellow; */
-    /* padding-left: 5%; */
 }
 
 .feather2{
-    /* position: relative;
-    top: -3vh;
-    width: 23vh;
-    height: 23vh; */
     width: 150px; 
     height: 150px;
-    /* background-color: yellow; */
-    /* padding-right: 5%; */
 }
 
 .mastheads{
     font-family: 'Cormorant Garamond', serif;
-    /* padding-top: 100px; */
-    /* padding-top: 5%; */
-    /* background-color: red; */
 }
 
 .mastheads_text{
@@ -215,21 +187,11 @@ header ul li ul li a{
 }
 
 .title{
-    /* width: 100%;
-    height: 100%; */
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* background-color: blue; */
-    /* position: absolute; */
-
-    /* justify-content: space-around; */
     justify-content: center;
     align-items: center;
-
-    /* padding-left: 23%;
-    padding-right: 23%; */
 }
 
 .image_row{
@@ -252,7 +214,6 @@ header ul li ul li a{
     font-family: 'EB Garamond', serif
 }
 
-/* IMPORTANT: redo the pixels with vh */
 .feather_border{
     position: absolute;
     top: -75px;
