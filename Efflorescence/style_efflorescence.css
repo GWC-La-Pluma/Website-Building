@@ -149,6 +149,7 @@ header ul li ul li a{
 }
 
 .title_page{
+    top: 60px;
     padding-top: 100%;
     padding-bottom: 20%;
     background: url("EfflorescencePics/cover_div_background.png");

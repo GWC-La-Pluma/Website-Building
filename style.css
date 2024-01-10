@@ -144,14 +144,6 @@ header ul li ul li a{
     color: var(--header-text-color);
 }
 
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
-    color: #aaa9d3;
-}
-
 .main_page {
     display: flex;
     flex-direction: column;
@@ -242,7 +234,7 @@ footer{
   font-size: 1.4vw;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     header{
         padding: 0 20px;
     }
