@@ -26,7 +26,7 @@
 
   /*typewriter*/
   --typewriterSpeed: 6s;
-  --typewriterCharacters: 48;
+  --typewriterCharacters: 25;
 }
 
 *{
@@ -38,7 +38,7 @@
 body{
   font-family: 'Cormorant Garamond', serif;
   /* background-color: var(--background-color); */
-  background-color: white;
+  background-color: #32597a;
 } 
 
 /*header*/
@@ -83,6 +83,13 @@ header{
 
 #spotify{
   animation-delay: 0.6s;
+}
+
+.spotify_container {
+  background-image: url("TacendaPics/spotify_div_background.jpg");
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 7%;
 }
 
 @keyframes animate_logo{
@@ -193,6 +200,7 @@ header ul li ul li a{
 .letter_title{
   color: var(--text-color);
   font-size: 4.3vw;
+  padding-bottom: 1%;
 }
 
 .letter{
@@ -206,16 +214,16 @@ header ul li ul li a{
   font-size: 2vw;
 
   padding-left: 20%;
-  padding-bottom: 3%;
+  padding-bottom: 6%;
 }
 
 .wrapper{
   color: white;
   text-decoration: none;
 
-  padding-top: 30%;
-  padding-left: 28%;
-  padding-bottom: 70%;
+  /* padding-top: 5%; */
+  /* padding-left: 3%; */
+  /* padding-bottom: 5%; */
 }
 
 .dynamic-text, .static-text {
@@ -224,6 +232,7 @@ header ul li ul li a{
   width: max-content;
   font-size: 2.7vw;
   margin-bottom: 5%;
+  color: black;
 }
 
 .dynamic-text::before,
@@ -237,14 +246,15 @@ header ul li ul li a{
 }
 
 .dynamic-text::before {
-  background: rgb(175, 96, 109);
+  /* background: rgb(175, 96, 109); */
+  background: white;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 .dynamic-text::after {
   width: 0.125em;
-  background: white;
+  background: black;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
       blink 2000ms steps(var(--typewriterCharacters)) infinite;
@@ -262,7 +272,7 @@ header ul li ul li a{
 }
 
 .gallery{
-  background: url("QuatervoisPics/gallery_div_background.png");
+  background: url("TacendaPics/gallery_div_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -283,6 +293,14 @@ header ul li ul li a{
   min-height: 200px;
   margin: 1%;
   overflow: hidden;
+}
+
+img.image {
+  transition: all 0.2s ease-in-out;
+}
+
+img.image:hover {
+filter: brightness(50%);
 }
 
 .image{
