@@ -1,8 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <title>Current Events</title>
         <link rel="stylesheet" href="style_current_events.css">
+
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font for the actual words in the letter from the editors (Josephin Sans)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+         <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+        <!-- Font for 'Letter from the Editors' (Savoye let)
+        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet"> -->
 
         <!--navbar stuff-->
         <!--Font for Nav Bar-->
@@ -14,11 +34,6 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
         <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
         <script defer src="../../TestingFiles/test_navbar.js"></script> 
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <header class="header">
@@ -47,7 +62,7 @@
                     </li>
                     <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
                         <ul class="dropdown__container">
-                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="current_events.html" class ="dropdown__link">Current</a></li>
                             <li><a href="#" class ="dropdown__link">Archive</a></li>
                         </ul>
                     </li>
@@ -56,21 +71,22 @@
             </nav>
         </header>
         <main>
-            <div class="background_container">
+            <div class="title_page">
                 <div class="top_part"></div>
                 <div class="bts_title"></div>
-                <div class="behind_the_scenes">
-                    <img src="CurrentPics/BehindTheScenesPics/img1.png">
-                    <img src="CurrentPics/BehindTheScenesPics/img2.png">
-                    <img src="CurrentPics/BehindTheScenesPics/img3.JPG">
-                </div>
-                <div class="holiday_title"></div>
-                <div class="holiday_cards">
-                    <img src="CurrentPics/HolidayCardsPics/img1.png">
-                    <img src="CurrentPics/HolidayCardsPics/img2.png">
-                    <img src="CurrentPics/HolidayCardsPics/img3.jpg">
-                </div>
-                <div class="open_title"></div>
+            </div>
+            <div class="behind_the_scenes">
+                <img src="CurrentPics/BehindTheScenesPics/img1.png">
+                <img src="CurrentPics/BehindTheScenesPics/img2.png">
+                <img src="CurrentPics/BehindTheScenesPics/img3.JPG">
+            </div>
+            <div class="holiday_title"></div>
+            <div class="holiday_cards">
+                <img src="CurrentPics/HolidayCardsPics/img1.png">
+                <img src="CurrentPics/HolidayCardsPics/img2.png">
+                <img src="CurrentPics/HolidayCardsPics/img3.jpg">
+            </div>
+            <div class="open_title"></div>
                 <div class="open_mic">
                     <img src="CurrentPics/OpenMicPics/img1.jpg">
                     <img src="CurrentPics/OpenMicPics/img2.jpg">
@@ -82,7 +98,6 @@
                     <img src="CurrentPics/OpenMicPics/img8.jpeg">
                     <img src="CurrentPics/OpenMicPics/img9.jpeg">
                 </div>
-            </div>
         </main>
         <footer>
             <p class="copyright">Created by AMIBA. © 2023</p>
