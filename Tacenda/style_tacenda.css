@@ -81,10 +81,6 @@ header{
   animation-delay: 0.4s;
 }
 
-#spotify{
-  animation-delay: 0.6s;
-}
-
 .spotify_container {
   background-image: url("TacendaPics/spotify_div_background.jpg");
   padding-top: 10%;
@@ -93,8 +89,8 @@ header{
 }
 
 @keyframes animate_logo{
-  from{ filter: hue-rotate(20deg); }
-  to{ filter: hue-rotate(40deg); }
+  from{ filter: hue-rotate(0deg); }
+  to{ filter: hue-rotate(20deg); }
 }
 
 header .logo{
