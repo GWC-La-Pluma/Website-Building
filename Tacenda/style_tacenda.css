@@ -291,6 +291,10 @@ header ul li ul li a{
   overflow: hidden;
 }
 
+img:hover{
+  cursor: grab;
+}
+
 img.image {
   transition: all 0.2s ease-in-out;
 }
