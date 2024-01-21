@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <title>Tacenda</title>
         <link rel="stylesheet" href="style_tacenda.css">
 
-        <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--Font for the actual words in the letter from the editors (Josephin Sans)-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-        <!-- Font for the words in the letter from the editors -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+         <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+        <!-- Font for 'Letter from the Editors' (Savoye let)
+        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet"> -->
 
         <!--navbar stuff-->
         <!--Font for Nav Bar-->
@@ -28,19 +34,15 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
         <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
         <script defer src="../TestingFiles/test_navbar.js"></script> 
-
-        <!--definition stuff-->
-        <script defer src="style_tacenda.js"></script> 
     </head>
     <body>
         <header class="header">
             <div class="logoSocials">
-                <a class="logo" href="../main_body.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <a class="logo" href="../index.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
                 <div class="socials">
                     <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
                     <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
                     <a href="https://www.pinterest.com/manasiganti/la-pluma-issue-1-tacenda/" class="fa-brands fa-pinterest" id="pinterest" target="blank"></a>
-                    <a href="" class="fa-brands fa-spotify" id="spotify" target="blank"></a>
                 </div>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -49,16 +51,14 @@
             </div>
             <nav class="nav__menu" id="nav-menu">
                 <ul>
-                    <li><a href="../main_body.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
                         <ul class="dropdown__container">
-                            <li><a href="tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="..tacenda.html" class ="dropdown__link">Tacenda</a></li>
                             <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
                             <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
                             <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
                             <li><a href="#" class ="dropdown__link">Syzygy</a></li>
-                            <li><a href="#" class ="dropdown__link">Crack</a></li>
-                            <li><a href="#" class ="dropdown__link">Halloween</a></li>
                         </ul>
                     </li>
                     <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
@@ -72,14 +72,41 @@
             </nav>
         </header>
         <main>
-            <div class="title_page">
+            <!-- <div class="title_page">
                 <div class="wrapper">
                     <div class="static-text">Tacenda [Ta-'chen-da] n: </div>
                     <div class="dynamic-text"><i>things better left unsaid</i></div>
                 </div>
+            </div> -->
+            <!-- slideshow popup -->
+            <div class="popup">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <p class="image-name">tacenda1.png</p> 
+                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
+                </div>
+                <!-- arrows -->
+                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
+                <!-- image -->
+                <img src="QuatervoisPics/quatervois1.png" class="large-image" alt="">
+                <!-- image-index -->
+                <h1 class="index">01</h1>
             </div>
-            <div class="editors_letter">
+            
+            <div class="t">
                 <div class="title">
+                    <div class="title_page">
+                        <div class="wrapper">
+                            <div class="static-text">Tacenda [Ta-'chen-da] n: </div>
+                            <div class="dynamic-text"><i>things better left unsaid</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="editors_letter">
+                <div class="letter_title">
                     <center><h4 style="font-weight: 400;">LETTER FROM THE EDITORS</h4></center>
                 </div>
                 <div class="letter">
@@ -102,25 +129,16 @@
                         that while some things are better left unsaid, no voice should go unheard.</p>
                 </div>
             </div>
+            <!-- <div class="def_page">
+                <div class="wrapper">
+                    <div class="static-text">Quatervois (Qua-ter-vwa)n: </div>
+                    <div class="dynamic-text"><i>a crossroad, critical decision, or turning point in one’s life</i></div>
+                </div>
+            </div> -->
             <div class="spotify_container">
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5vIEgwFrBUPS0wV4XWiF4w?utm_source=generator" width="90%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-
-            <!--Popup slideshow-->
-            <div class="popup">
-                <div class="top-bar">
-                    <p class="image-name">img1.png</p>
-                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
-                </div>
-    
-                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
-                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
-    
-                <img src="TacendaPics/tacenda1.png" class="large-image" alt="">
-    
-                <h1 class="index">01</h1>
-            </div>
-
+            
             <!--Image gallery-->
             <div class="gallery">
                 <div class="gallery-image">

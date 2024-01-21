@@ -149,6 +149,7 @@ header ul li ul li a{
 }
 
 .title_page{
+    top: 60px;
     padding-top: 100%;
     padding-bottom: 20%;
     background: url("EfflorescencePics/cover_div_background.png");
@@ -717,14 +718,14 @@ header ul li ul li a{
 }
 
 footer{
-    background-color: var(--background-color);
+    background-color: white;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 44%;
 }
 
 .copyright{
-    color: white;
+    color: black;
     font-size: 1.4vw;
 }
 
