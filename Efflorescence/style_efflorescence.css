@@ -247,6 +247,146 @@ header ul li ul li a{
     align-items: center;
 }
 
+.gallery-image{
+    width: 30%;
+    height: calc(50%-20px);
+    min-width: 300px;
+    min-height: 200px;
+    margin: 1%;
+    overflow: hidden;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+/* Budding popup */
+.budding_popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80%;
+    max-width: 1600px;
+    height: 90vh;
+    max-height: 800px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+
+.budding_popup .left-arrow{
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.budding_popup .right-arrow{
+    right: 10px;
+}
+
+.left-arrow img{
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+}
+
+.right-arrow img{
+    width: 50px;
+    height: 50px;
+}
+
+.budding_popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.budding_popup.active .close-btn,
+.budding_popup.active .image-name,
+.budding_popup.active .index,
+.budding_popup.active .large-image,
+.budding_popup.active .arrow-btn{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 1s;
+}
+
+.budding_popup .top-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.budding_popup .image-name{
+    opacity: 0;
+}
+
+.budding_popup .close-btn{
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-btn img{
+    height: 30px;
+    width: 30px;
+}
+
+.budding_popup .arrow-btn{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.arrow-btn:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.budding_popup .index{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+}
+
+.budding_popup .large-image{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0;
+}
+
+
 .blooming_container{
     background: url("EfflorescencePics/blooming_div_background.png");
     background-repeat: no-repeat;
@@ -296,9 +436,114 @@ header ul li ul li a{
     max-width: 3000px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+/* Blooming popup */
+.blooming_popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80%;
+    max-width: 1600px;
+    height: 90vh;
+    max-height: 800px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+
+.blooming_popup .left-arrow{
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.blooming_popup .right-arrow{
+    right: 10px;
+}
+
+.blooming_popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.blooming_popup.active .close-btn,
+.blooming_popup.active .image-name,
+.blooming_popup.active .index,
+.blooming_popup.active .large-image,
+.blooming_popup.active .arrow-btn{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 1s;
+}
+
+.blooming_popup .top-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.blooming_popup .image-name{
+    opacity: 0;
+}
+
+.blooming_popup .close-btn{
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blooming_popup .arrow-btn{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.blooming_popup .index{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+}
+
+.blooming_popup .large-image{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0;
+}
+
 
 .decaying_container{
     background: url("EfflorescencePics/decaying_div_background.png");
@@ -310,7 +555,6 @@ header ul li ul li a{
     color: var(--text-color);
     text-shadow: 0.2vw 0.2vw 0.2vw black;
 }
-
 /*.decaying_title{
     font-size: 7vw;
 
@@ -351,6 +595,109 @@ header ul li ul li a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+/* Decaying popup */
+.decaying_popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80%;
+    max-width: 1600px;
+    height: 90vh;
+    max-height: 800px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+
+.decaying_popup .left-arrow{
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.decaying_popup .right-arrow{
+    right: 10px;
+}
+
+.decaying_popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.decaying_popup.active .close-btn,
+.decaying_popup.active .image-name,
+.decaying_popup.active .index,
+.decaying_popup.active .large-image,
+.decaying_popup.active .arrow-btn{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 1s;
+}
+
+.decaying_popup .top-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.decaying_popup .image-name{
+    opacity: 0;
+}
+
+.decaying_popup .close-btn{
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.decaying_popup .arrow-btn{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.decaying_popup .index{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+}
+
+.decaying_popup .large-image{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0;
 }
 
 .gallery-image{
