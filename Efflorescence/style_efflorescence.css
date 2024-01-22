@@ -248,6 +248,18 @@ header ul li ul li a{
     align-items: center;
 }
 
+img:hover{
+    cursor: grab;
+}
+
+img.image {
+    transition: all 0.2s ease-in-out;
+}
+
+img.image:hover {
+  filter: brightness(50%);
+}
+
 .gallery-image{
     width: 30%;
     height: calc(50%-20px);
