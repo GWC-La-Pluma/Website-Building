@@ -77,6 +77,13 @@ header{
   animation-delay: 0.2s;
 }
 
+#frontcover {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 45%;
+}
+
 @keyframes animate_logo{
   from{ filter: hue-rotate(40deg); }
   to{ filter: hue-rotate(60deg); }
