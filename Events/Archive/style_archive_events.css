@@ -164,7 +164,7 @@ header ul li ul li a{
 }
 
 .top_part {
-  background-image: url("CurrentPics/events_title.png");
+  background-image: url("ArchivePics/events_title.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -175,7 +175,7 @@ header ul li ul li a{
 }
 
 .bts_title{
-  background-image: url("CurrentPics/events_bts.png");
+  background-image: url("ArchivePics/events_bts.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -202,7 +202,7 @@ header ul li ul li a{
 }
 
 .holiday_title{
-  background-image: url("CurrentPics/events_holiday.png");
+  background-image: url("ArchivePics/events_holiday.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -230,7 +230,7 @@ header ul li ul li a{
 }
 
 .open_title{
-  background-image: url("CurrentPics/events_open.png");
+  background-image: url("ArchivePics/events_open.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
