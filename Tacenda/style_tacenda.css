@@ -426,7 +426,7 @@ filter: brightness(50%);
 }
 
 .large-image{
-  margin-top: 5%;
+  margin-top: 0;
   width: 80%;
   height: 80%;
   /*object-fit: contain; I wonder what this does ??? */
