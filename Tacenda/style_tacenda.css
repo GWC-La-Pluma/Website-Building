@@ -426,10 +426,10 @@ filter: brightness(50%);
 }
 
 .large-image{
-  margin-top: 0;
+  margin-top: 5%;
   width: 80%;
   height: 80%;
-  /*object-fit: contain; I wonder what this does ??? */
+  object-fit: contain;
   opacity: 0;
 }
 
