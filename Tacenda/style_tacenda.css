@@ -431,6 +431,7 @@ filter: brightness(50%);
   height: 80%;
   object-fit: contain;
   opacity: 0;
+  background-color: red;
 }
 
 .gallery-title{
