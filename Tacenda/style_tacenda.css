@@ -426,9 +426,9 @@ filter: brightness(50%);
 }
 
 .large-image{
-  margin-top: 5%;
-  width: 80%;
-  height: 80%;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   opacity: 0;
 }
