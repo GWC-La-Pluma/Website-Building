@@ -429,9 +429,8 @@ filter: brightness(50%);
   margin-top: 5%;
   width: 80%;
   height: 80%;
-  object-fit: contain;
+  /*object-fit: contain; I wonder what this does ??? */
   opacity: 0;
-  background-color: red;
 }
 
 .gallery-title{
