@@ -450,7 +450,7 @@ img.image:hover {
 
 .scrollbar{
   position: absolute;
-  width: 1750px;
+  width: 700px;
   height: 80%;
   overflow-x: none;
   overflow-y: scroll;
