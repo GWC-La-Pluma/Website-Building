@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Viridity</title>
+        <link rel="stylesheet" href="style_viridity.css">
+
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font for the actual words in the letter from the editors (Josephin Sans)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+         <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+        <!-- Font for 'Letter from the Editors' (Savoye let)
+        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet"> -->
+
+        <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+        <!--navbar icons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="../TestingFiles/test_navbar.js"></script> 
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo" href="../index.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Tacenda/tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="../Syzygy/syzygy.html" class ="dropdown__link">Syzygy</a></li>
+                            <li><a href="#" class ="dropdown__link">Viridity</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="../Events/Archive/archive_events.html" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../AboutPage/about_page.html">Mastheads</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- slideshow popup -->
+            <div class="popup">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <p class="image-name">quatervois1.png</p> 
+                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
+                </div>
+                <!-- arrows -->
+                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
+                <!-- image -->
+                <div class="scrollbar">
+                    <img src="QuatervoisPics/quatervois1.png" class="large-image" alt="">
+                </div>
+                <!-- image-index -->
+                <h1 class="index">01</h1>
+            </div>
+            
+            <div class="t">
+                <div class="title">
+                    <div class="title_page">
+                        
+                        <img src="ViridityPics/full_cover.png" id="viridity_cover">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.85+100+'px';
+                })
+            </script>
+            
+            <div class="editors_letter">
+                <div class="letter_title">
+                    <center><h1 style="font-weight: 100;">Letter from the Editors</h1></center>
+                </div>
+                <!--IMPORTANT: figure out how to indent the first word-->
+                <div class="letter">
+                    <p align="left" style="padding-bottom: 5vh">Springtime is strange—remnants of winter in
+                        the bleak skies and chilly breeze give way to
+                        summer weather, only to return the next week. The
+                        unpredictable El Niño weather makes spring feel less
+                        like a season of flowers and blue skies and more like
+                        the liminal space in which winter slowly unfolds into
+                        the promise of warmth to come.  
+                        </p>
+    
+                        <p align="left" style="padding-bottom: 5vh">Now, at the cusp of summer, rain has given way to
+                            a bursting of green. The unfurling of leaves rekindles
+                            the youthful lust for life within us all. With the
+                            conclusion of AP exams, we look forward to what
+                            summer has in store. For freshmen and sophomores,
+                            summer break is filled with the promise of learning
+                            and growth. Juniors ponder upon their future as they
+                            prepare for the next step of their academic journey.
+                            Seniors anticipate going to college as their official
+                            foray into adulthood, leaving high school—and the
+                            ball-and-chain of adolescence it represents—behind.</p>
+                            
+                        <p align="left" style="padding-bottom: 5vh">We are always eager to look forward. But we never
+                            seem to look around.</p>
+
+                        <p align="left" style="padding-bottom: 5vh">In Volume 6: Viridity, we travel through forests,
+                            seeking the fountain of youth. We reminisce on the
+                            naivete of our childhood. We plant gardens; we bury
+                            ourselves in them. We stand still, just beginning to
+                            understand the fleeting greenery that enshrines us.
+                            Time pulls us through the viridity of our lives too
+                            soon, so we write, draw, and paint to remind ourselves
+                            of our innocence.</p>
+                        <p align="left" style="padding-bottom: 5vh">Volume 6 is a reminder to us all that our youth—with
+                            all its wide-eyed and wobbly-kneed inexperience—has
+                            more to offer than we could ever imagine. High school
+                            may embody the liminality of a California El Niño
+                            Spring, but the green of our youth fades as fast as it
+                            blooms. As we sign off on our last issue of the year, we
+                            hope Viridity inspires you to treasure your roots as you
+                            grow towards your future.</p>
+                </div>
+            </div>
+            <div class="def_page">
+                <div class="wrapper">
+                    <div class="static-text">Viridity: </div>
+                    <div class="dynamic-text"><i>(n). the quality or state of being green</i></div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity1.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity2.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity3.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity4.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity5.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity6.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity7.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity8.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity9.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity10.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity11.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity12.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity13.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity14.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity15.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity16.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity17.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity18.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity19.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity20.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity21.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity22.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity23.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity24.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity25.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity26.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity27.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity28.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity29.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ViridityPics/viridity30.png" alt="" class="image">
+                </div>
+                
+            </div>
+            <div class="test_gallery"></div>
+
+            <script src = "viridity_slideshow.js"></script>
+        </main>
+        <footer>
+            <p class="copyright">Created by AMIBA. © 2023</p>
+        </footer>
+    </body>
+</html>
