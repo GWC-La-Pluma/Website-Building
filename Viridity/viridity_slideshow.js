@@ -19,7 +19,7 @@ images.forEach((item, i) => {
 })
 
 const updateImage = (i) => {
-    let path = `ViridityPics/viridity${i+4}.png`;
+    let path = `ViridityPics/viridity${i+1}.png`;
     largeImage.src = path;
     imageName.innerHTML = `Viridity: Page ${i+1}`;
     if(i < 9){
