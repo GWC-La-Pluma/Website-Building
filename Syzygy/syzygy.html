@@ -1,112 +1,233 @@
-<!-- slideshow popup -->
-<div class="popup">
-    <!-- top bar -->
-    <div class="top-bar">
-        <p class="image-name">syzygy1.png</p> 
-        <span class="close-btn"><img src="../XButton.png" alt=""></span>
-    </div>
-    <!-- arrows -->
-    <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
-    <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
-    <!-- image -->
-    <img src="SyzygyPics/syzygy1.png" class="large-image" alt="">
-    <!-- image-index -->
-    <h1 class="index">01</h1>
-</div>
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Syzygy</title>
+        <link rel="stylesheet" href="style_syzygy.css">
 
-<!-- Add your gallery of images -->
-<div class="gallery">
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy1.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy2.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy3.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy4.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy5.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy6.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy7.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy8.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy9.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy10.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy11.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy12.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy13.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy14.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy15.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy16.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy17.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy18.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy19.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy20.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy21.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy22.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy23.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy24.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy25.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy26.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy27.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy28.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy29.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy30.png" alt="" class="image">
-    </div>
-    <div class="gallery-image">
-        <img src="SyzygyPics/syzygy31.png" alt="" class="image">
-    </div>
-</div>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font for the actual words in the letter from the editors (Josephin Sans)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+         <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+        <!-- Font for 'Letter from the Editors' (Savoye let)
+        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet"> -->
+
+        <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+        <!--navbar icons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="../TestingFiles/test_navbar.js"></script> 
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo" href="../index.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Tacenda/tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="#" class ="dropdown__link">Syzygy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="../Events/Archive/archive_events.html" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../AboutPage/about_page.html">Mastheads</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- slideshow popup -->
+            <div class="popup">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <p class="image-name">quatervois1.png</p> 
+                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
+                </div>
+                <!-- arrows -->
+                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
+                <!-- image -->
+                <div class="scrollbar">
+                    <img src="QuatervoisPics/quatervois1.png" class="large-image" alt="">
+                </div>
+                <!-- image-index -->
+                <h1 class="index">01</h1>
+            </div>
+            
+            <div class="t">
+                <div class="title">
+                    <div class="title_page">
+                        <img src="SyzygyPics/stars.png" id="stars">
+                        <img src="SyzygyPics/cover_with_title.png" id="sun">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.85+100+'px';
+                })
+            </script>
+            
+            <div class="editors_letter">
+                <div class="letter_title">
+                    <center><h1 style="font-weight: 100;">Letter from the Editors</h1></center>
+                </div>
+                <!--IMPORTANT: figure out how to indent the first word-->
+                <div class="letter">
+                    <p align="left" style="padding-bottom: 5vh">2024 unfolds into a tableau of stark contrasts. 
+                        The  cold uncertainty of winter reveals the push and pull of progress against tradition, 
+                        unity against division, and  hope against despair. Just as celestial bodies align in a  
+                        rare harmony, community bonds intertwine moments of isolation, marking our lives with 
+                        delicate connections  that bridge deep societal rifts. We invite you to join us as we seek 
+                        to understand the complexity of our natures.  
+                        </p>
+    
+                        <p align="left" style="padding-bottom: 5vh">In Volume 05: Syzygy, MVHS’ creative body explores 
+                            the collision of unlike minds and moments that ignite change within. We confront the conflicts 
+                            inherent in any union, writing love letters and forming blood pacts  to embrace the growth that 
+                            emerges from friction. We ponder over the juxtaposition of opposite forces—oil  and water, good and evil, 
+                            stillness and chaos—to create  something transcendent from the harmonious blending  of contradiction.</p>
+    
+                       
+                </div>
+            </div>
+            <div class="def_page">
+                <div class="wrapper">
+                    <div class="static-text">Syzygy (SIH-zuh-jee)n: </div>
+                    <div class="dynamic-text"><i>a conjunction or opposition, especially of the moon with the sun</i></div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy4.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy5.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy6.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy7.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy8.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy9.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy10.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy11.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy12.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy13.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy14.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy15.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy16.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy17.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy18.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy19.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy20.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy21.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy22.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy23.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy24.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy25.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy26.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy27.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy28.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy29.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy30.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="SyzygyPics/syzygy31.png" alt="" class="image">
+                </div>
+                
+            </div>
+            <div class="test_gallery"></div>
+
+            <script src = "syzygy_slideshow.js"></script>
+        </main>
+        <footer>
+            <p class="copyright">Created by AMIBA. © 2023</p>
+        </footer>
+    </body>
+</html>

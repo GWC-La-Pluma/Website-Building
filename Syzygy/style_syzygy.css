@@ -155,7 +155,7 @@ header ul li ul li a{
 }
 
 .title{
-    background-image: url("SyzygyPics/cover_with_shadow.png");
+    background-image: url("SyzygyPics/cover_with_title.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -232,19 +232,19 @@ header ul li ul li a{
 }
 
 .def_page{
-    background: url("QuatervoisPics/def_div_background.png");
+    
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 50% 50%;
 }
 
 .wrapper{
     color: white;
     text-decoration: none;
 
-    padding-top: 30%;
+    padding-top: 2%;
     padding-left: 28%;
-    padding-bottom: 70%;
+    padding-bottom: 10%;
 }
 
 .dynamic-text, .static-text {
@@ -266,7 +266,7 @@ header ul li ul li a{
 }
 
 .dynamic-text::before {
-    background: rgb(175, 96, 109);
+    background: rgb(17, 11, 49);
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards;
 }
@@ -448,12 +448,23 @@ img.image:hover {
     opacity: 0;
 }
 
+.scrollbar{
+  position: absolute;
+  width: 700px;
+  height: 80%;
+  overflow-x: none;
+  overflow-y: scroll;
+  top: 10%;
+}
+
 .large-image{
-    margin-top: 5%;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    opacity: 0;
+  margin-top: 0%;
+  width: 700px;
+  height: 900px;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .gallery-title{
