@@ -393,8 +393,8 @@ img.image:hover {
 
 .budding_popup .large-image{
     margin-top: 5%;
-    width: 80%;
-    height: 80%;
+    width: 700px;
+    height: 900px;
     object-fit: contain;
     opacity: 0;
 }
@@ -551,8 +551,8 @@ img.image:hover {
 
 .blooming_popup .large-image{
     margin-top: 5%;
-    width: 80%;
-    height: 80%;
+    width: 700px;
+    height: 900px;
     object-fit: contain;
     opacity: 0;
 }
@@ -707,8 +707,8 @@ img.image:hover {
 
 .decaying_popup .large-image{
     margin-top: 5%;
-    width: 80%;
-    height: 80%;
+    width: 700px;
+    height: 900px;
     object-fit: contain;
     opacity: 0;
 }
@@ -816,4 +816,13 @@ footer{
     header ul li:hover .dropdown__arrow{
         transform: rotate(180deg);
     }
+}
+
+.scrollbar{
+  position: absolute;
+  width: 700px;
+  height: 80%;
+  overflow-x: none;
+  overflow-y: scroll;
+  top: 10%;
 }
