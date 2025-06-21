@@ -19,7 +19,7 @@ images.forEach((item, i) => {
 })
 
 const updateImage = (i) => {
-    let path = `SyzygyPics/syzygy${i+1}.png`;
+    let path = `SyzygyPics/syzygy${i+4}.png`;
     largeImage.src = path;
     imageName.innerHTML = `Syzygy: Page ${i+1}`;
     if(i < 9){
