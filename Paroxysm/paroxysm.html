@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Paroxysm</title>
+        <link rel="stylesheet" href="style_paroxysm.css">
+
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font for the actual words in the letter from the editors (Josephin Sans)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+         <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+        <!-- Font for 'Letter from the Editors' (Savoye let)
+        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet"> -->
+
+        <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+        <!--navbar icons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="../TestingFiles/test_navbar.js"></script> 
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo" href="../index.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Tacenda/tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="../Syzygy/syzygy.html" class ="dropdown__link">Syzygy</a></li>
+                            <li><a href="../Viridity/viridity.html" class ="dropdown__link">Viridity</a></li>
+                            <li><a href="../Paroxysm/paroxysm.html" class ="dropdown__link">Paroxysm</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="#" class ="dropdown__link">Current</a></li>
+                            <li><a href="../Events/Archive/archive_events.html" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../AboutPage/about_page.html">Mastheads</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- slideshow popup -->
+            <div class="popup">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <p class="image-name">quatervois1.png</p> 
+                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
+                </div>
+                <!-- arrows -->
+                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
+                <!-- image -->
+                <div class="scrollbar">
+                    <img src="QuatervoisPics/quatervois1.png" class="large-image" alt="">
+                </div>
+                <!-- image-index -->
+                <h1 class="index">01</h1>
+            </div>
+            
+            <div class="t">
+                <div class="title">
+                    <div class="title_page">
+                        
+                        <img src="ParoxysmPics/full_cover.png" id="paroxysm_cover">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.85+100+'px';
+                })
+            </script>
+            
+            <div class="editors_letter">
+                <div class="letter_title">
+                    <center><h1 style="font-weight: 100;">Letter from the Editors</h1></center>
+                </div>
+                <!--IMPORTANT: figure out how to indent the first word-->
+                <div class="letter">
+                    <p align="left" style="padding-bottom: 5vh">In the Bay Area, winter is a season of crescendoes- 
+                        sudden downpours and unexpected sunbursts stagger the days to keep them from flowing by, 
+                        and the quiet tension of fog lingers just long enough to hold the world in suspense. Nature 
+                        seems to hold its breath, only to exhale in paroxysms— a downpour, a rosy sunrise, a fierce gust 
+                        of wind— reminding us that even in its stillest season, the world is never truly at rest.  
+                        </p>
+    
+                        <p align="left" style="padding-bottom: 5vh">Paroxysm is everywhere. It's in the first breath of 
+                            icy air that jolts you awake on a winter morning and the fierce joy of laughing until you're 
+                            breathless. It's in the fire of an argument that erupts without warning, the flood of tears 
+                            that follows along - held silence, and the sharp inhale before you leap into the unknown. 
+                            Just as storms carve new paths through the mountains that surround us, these moments of 
+                            unrestrained energy leave their mark, reshaping who we are.</p>
+                            
+                        <p align="left" style="padding-bottom: 5vh">In Volume 6: Paroxysm, we embrace the tumultuous nature 
+                            of emotion and change. This issue is a celebration of crescendos- the turbulence of goodbyes; 
+                            the exhilaration fireworks leave in their wake; the confrontations between ourselves and our inner 
+                            demons. We unwind the tension of the quiet that comes both before and after peaks of emotion, 
+                            ultimately leaving us with a better understanding of our own beginnings.</p>
+
+                        <p align="left" style="padding-bottom: 5vh">As you turn these pages, we hope you will find echoes 
+                            of your own life's paroxysms- those fleeting but vivid moments when the world feels most alive. 
+                            Let this issue remind you that in every outburst, our world forever in emotion also contains 
+                            the capacity of transforming into something extraordinary.</p>
+                        
+                </div>
+            </div>
+            <div class="def_page">
+                <div class="wrapper">
+                    <div class="static-text">paroxysm: </div>
+                    <div class="dynamic-text"><i>(n). a sudden attack or violent expression of a particular emotion or activity</i></div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm1.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm2.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm3.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm4.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm5.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm6.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm7.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm8.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm9.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm10.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm11.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm12.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm13.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm14.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm15.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm16.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm17.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm18.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm19.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm20.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm21.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm22.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm23.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm24.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm25.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm26.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm27.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm28.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm29.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm30.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm31.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="ParoxysmPics/paroxysm32.png" alt="" class="image">
+                </div>
+                
+                
+            </div>
+            <div class="test_gallery"></div>
+
+            <script src = "paroxysm_slideshow.js"></script>
+        </main>
+        <footer>
+            <p class="copyright">Created by AMIBA. © 2023</p>
+        </footer>
+    </body>
+</html>
