@@ -306,13 +306,12 @@ footer{
 
 .image_box > div{
   display: flex;
-  width: 100%;
+  position: relative;
+  left: calc(50% - 320px);
 }
 
 .image_box > div > img{
   width: 300px;
-  position: relative;
-  left: calc(50% - 320px);
 }
 
 .image_box > div > div > h2{
@@ -320,15 +319,11 @@ footer{
   font-size: 50px;
   color: white;
   margin-left: 40px;
-  position: relative;
-  left: calc(50% + 30px);
 }
 
 .image_box > div > div > p{
   color: white;
   margin-left: 40px;
   font-size: 23px;
-  position: relative;
-  left: calc(50% + 30px);
   width: 300px;
 }
