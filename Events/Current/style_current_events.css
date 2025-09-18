@@ -299,31 +299,33 @@ footer{
 }
 
 .image_box{
-  position: absolute;
-  top: 27%;
   width: 100vw;
+  position: absolute;
+  top: 28%;
 }
 
 .image_box > div{
   display: flex;
   position: relative;
-  left: calc(50% - 320px);
+  left: calc(50% - 420px);
 }
 
 .image_box > div > img{
-  width: 300px;
+  width: 400px;
+}
+
+.image_box > div > div{
+  width: 400px;
+  margin-left: 40px;
 }
 
 .image_box > div > div > h2{
   font-family: 'Cormorant Garamond', serif;
   font-size: 50px;
   color: white;
-  margin-left: 40px;
 }
 
 .image_box > div > div > p{
   color: white;
-  margin-left: 40px;
   font-size: 23px;
-  width: 300px;
 }
