@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Numen</title>
+        <link rel="stylesheet" href="style_numen.css">
 
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font for the actual words in the letter from the editors (Josephin Sans)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+         <!--Definition fonts (Cormorant Garamond and Cormorant Garamond italicized)-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+        <!-- Font for 'Letter from the Editors' (Savoye let)
+        <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet"> -->
+
+        <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+        <!--navbar icons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <script src="https://kit.fontawesome.com/b7d3fa3fed.js" crossorigin="anonymous"></script>
+        <script defer src="../TestingFiles/test_navbar.js"></script> 
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo" href="../index.html"><img src="../logo.jpg" width="30px" height="35px">La Pluma</a>
+                <div class="socials">
+                    <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
+                    <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Issues<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Tacenda/tacenda.html" class ="dropdown__link">Tacenda</a></li>
+                            <li><a href="../Kalopsia/kalopsia.html" class ="dropdown__link">Kalopsia</a></li>
+                            <li><a href="../Quatervois/quatervois.html" class ="dropdown__link">Quatervois</a></li>
+                            <li><a href="../Efflorescence/efflorescence.html" class ="dropdown__link">Efflorescence</a></li>
+                            <li><a href="../Syzygy/syzygy.html" class ="dropdown__link">Syzygy</a></li>
+                            <li><a href="../Viridity/viridity.html" class ="dropdown__link">Viridity</a></li>
+                            <li><a href="../Paroxysm/paroxysm.html" class ="dropdown__link">Paroxysm</a></li>
+                            <li><a href="../Monsoon/monsoon.html" class ="dropdown__link">Monsoon</a></li>
+                            <li><a href="../Numen/numen.html" class ="dropdown__link">Numen</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../Events/Current/current_events.html" class ="dropdown__link">Current</a></li>
+                            <li><a href="../Events/Archive/archive_events.html" class ="dropdown__link">Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../AboutPage/about_page.html">Mastheads</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- slideshow popup -->
+            <div class="popup">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <p class="image-name">quatervois1.png</p> 
+                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
+                </div>
+                <!-- arrows -->
+                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
+                <!-- image -->
+                <div class="scrollbar">
+                    <img src="QuatervoisPics/quatervois1.png" class="large-image" alt="">
+                </div>
+                <!-- image-index -->
+                <h1 class="index">01</h1>
+            </div>
+            
+            <div class="t">
+                <div class="title">
+                    <div class="title_page">
+                        
+                        <img src="NumenPics/full_cover.png" id="numen_cover">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.85+100+'px';
+                })
+            </script>
+            
+            <div class="editors_letter">
+                <div class="letter_title">
+                    <center><h1 style="font-weight: 100;">Letter from the Editors</h1></center>
+                </div>
+                <!--IMPORTANT: figure out how to indent the first word-->
+                <div class="letter">
+                    <p align="left" style="padding-bottom: 5vh">Often, every school year starts off as though it were a repeat of the last. We tread the same hallways, seek the same comforts,
+and carve homes in our mundane routines. But autumn falls upon us and a storm gathers bluster just as we think we've figured it out. Soon, we are whisked into countless new experiences—new teachers, new classes, new friends—and find ourselves rushing forward into the blinding light of our futures.
+                        </p>
+    
+                        <p align="left" style="padding-bottom: 5vh">But what appears to be a white haze on the horizon only turns out to be winter. Though we Californians are spared from truly brutal weather, we witness the days shortening, friends retreating— signs that our lives are privy to forces vastly beyond us. As freshmen contend with their burgeoning identities and seniors figure out how to pack theirs within word
+count, the thought inevitably appears: How much of this was ever in our control?</p>
+                            
+                        <p align="left" style="padding-bottom: 5vh">Volume 9: Numen invites you to pinpoint this complex and divine presence-in our par-entage, our math homework, our fleeting rendezvous. We shape each moment of our lives, but we are also guided by an instinct too immense to be embodied, yet too intimate to deny
+influence.</p>
+
+                        <p align="left" style="padding-bottom: 5vh">With our work, we navigate that spiritual space. Volume 9: Numen is a testament to art's acuity— maybe we can't contain the divine, but we can trace the dappled shapes of their shadows, searching for their answers.</p>
+                        
+                </div>
+            </div>
+            <div class="def_page">
+                <div class="wrapper">
+                    <div class="static-text">numen: </div>
+                    <div class="dynamic-text"><i>(n.) the spirit or divine power presiding over a thing or place</i></div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="NumenPics/numen1.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen2.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen3.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen4.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen5.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen6.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen7.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen8.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen9.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen10.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen11.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen12.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen13.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen14.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen15.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen16.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen17.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen18.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen19.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen20.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen21.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen22.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen23.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen24.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen25.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen26.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen27.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen28.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen29.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen30.png" alt="" class="image">
+                </div>
+                <div class="gallery-image">
+                    <img src="NumenPics/numen31.png" alt="" class="image">
+                </div>
+                
+
+                
+            </div>
+            <div class="test_gallery"></div>
+
+            <script src = "numen_slideshow.js"></script>
+        </main>
+        <footer>
+            <p class="copyright">Created by AMIBA. © 2023</p>
+        </footer>
+    </body>
+</html>
