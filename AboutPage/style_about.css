@@ -161,6 +161,8 @@ header ul li ul li a{
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    position: relative;
+    top: -30px;
 }
 
 .feather1{
