@@ -58,7 +58,7 @@ header{
   font-family: 'Cormorant Garamond', serif;
 }
 
-#instagram, #gmail, #pinterest, #spotify{
+#instagram, #gmail, #spotify{
   text-decoration: none;
   font-size: 1.8em; 
   background-color: var(--header-color);
@@ -75,10 +75,6 @@ header{
 
 #gmail{
   animation-delay: 0.2s;
-}
-
-#pinterest{
-  animation-delay: 0.4s;
 }
 
 .spotify_container {
