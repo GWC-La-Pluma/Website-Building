@@ -58,7 +58,7 @@ header{
   font-family: 'Cormorant Garamond', serif;
 }
 
-#instagram, #gmail, #spotify{
+#instagram, #gmail, #pinterest, #spotify{
   text-decoration: none;
   font-size: 1.8em; 
   background-color: var(--header-color);
