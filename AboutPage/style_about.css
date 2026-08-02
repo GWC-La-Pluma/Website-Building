@@ -58,23 +58,13 @@ header{
   font-family: 'Cormorant Garamond', serif;
 }
 
-#instagram, #gmail{
-  text-decoration: none;
-  font-size: 1.8em; 
-  background-color: var(--header-color);
-  color: var(--title-color);
-  box-shadow: 0.38px 0.38px 0.38px #00000080, 1.88px 0.19px 2.26px #00000080, 0.38px 0.38px 1.88px #00000080, 
-  0.38px 0.38px 0.57px #00000080, inset 0.38px 0.38px 1.88px #00000080, inset 0.38px 0.38px 1.88px #00000080,
-  inset 0.38px 0.38px 1.88px #00000080, inset 0.38px 0.38px 1.88px #00000080;
-  border-radius: 5.47px;
-  padding: 2.08px 3.58px;
-  margin: 0 7.55px;
-  animation: animate_logo 3s linear infinite;
-  text-shadow: 0 0 9.43px #0072ff, 0 0 18.87px #0072ff, 0 0 28.3px #0072ff, 0 0 37.74px #0072ff;
-}
-
-#gmail{
-  animation-delay: 0.2s;
+#instagram, #gmail {
+    text-decoration: none;
+    font-size: 1.8em;
+    background: none;      
+    color: #fff;              
+    padding: 2px 4px;
+    margin: 0 8px;
 }
 
 @keyframes animate_logo{
