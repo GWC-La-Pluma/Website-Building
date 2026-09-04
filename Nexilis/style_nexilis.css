@@ -68,12 +68,12 @@ header{
     margin: 0 8px;
 }
 
-.spotify_container {
+/* .spotify_container {
   background-image: url("TacendaPics/spotify_div_background.jpg");
   padding-top: 10%;
   padding-bottom: 10%;
   padding-left: 7%;
-}
+} */
 
 @keyframes animate_logo{
   from{ filter: hue-rotate(0deg); }
@@ -145,7 +145,7 @@ header ul li ul li a{
 }
 
 .title{
-  background-image: url("TacendaPics/cover_div_background.jpg");
+  background-image: url("NexilisPics/nexiliscover.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
