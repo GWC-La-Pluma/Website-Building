@@ -145,6 +145,7 @@ header ul li ul li a{
 }
 
 .title{
+  background-image: url("NexilisPics/nexiliscover.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -171,7 +172,6 @@ header ul li ul li a{
 }
 
 .editors_letter{
-  background-image: url("NexilisPics/letterfromeditors.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
