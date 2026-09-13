@@ -42,7 +42,7 @@
   } 
 
 /*header*/
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 3;
+  z-index: 10;
 }
 
 .header {
@@ -141,8 +141,8 @@ header ul li ul li a{
   color: var(--header-text-color);
 }
 
-.t{
-  padding-top: 60px;
+.t {
+  padding-top: 0;
 }
 
 .title_page{
@@ -337,7 +337,7 @@ footer{
 }
 
 .banner-track span {
-    display: block;
+    display: inline-block;
     white-space: nowrap;
     padding-right: 100px;
 }
@@ -345,6 +345,7 @@ footer{
 .banner a {
     color: black;
     text-decoration: underline;
+    font-weight: 500;
 }
 
 .banner a:hover {
@@ -355,6 +356,7 @@ footer{
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
     }
