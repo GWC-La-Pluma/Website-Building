@@ -44,6 +44,8 @@
 /*header*/
 header{
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 60px;
   background-color: var(--header-color);
@@ -316,8 +318,8 @@ footer{
 .banner {
     width: 100%;
     height: 70px;
-    background-color: rgb(205, 227, 241);
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -329,14 +331,12 @@ footer{
 .banner-track {
     display: flex;
     width: max-content;
-
-    animation: move 18s linear infinite;
+    animation: move 30s linear infinite;
 }
 
 .banner-track span {
     display: inline-block;
     white-space: nowrap;
-
     padding-right: 100px;
 }
 
