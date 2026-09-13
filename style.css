@@ -312,3 +312,50 @@ footer{
       transform: rotate(180deg);
   }
 }
+
+.banner {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 60px;
+}
+
+.banner-track {
+    display: flex;
+    width: max-content;
+
+    animation: move 18s linear infinite;
+}
+
+.banner-track span {
+    display: inline-block;
+    white-space: nowrap;
+
+    padding-right: 100px;
+}
+
+.banner a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.banner a:hover {
+    color: rgb(205, 227, 241);
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
