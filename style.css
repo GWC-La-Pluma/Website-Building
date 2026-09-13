@@ -71,8 +71,8 @@ header{
 
 #frontcover {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 60px;
+  right: 0;
   width: 45%;
 }
 
@@ -326,6 +326,8 @@ footer{
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     margin-top: 60px;
+    position: relative;
+    z-index: 5;
 }
 
 .banner-track {
@@ -335,7 +337,7 @@ footer{
 }
 
 .banner-track span {
-    display: inline-block;
+    display: block;
     white-space: nowrap;
     padding-right: 100px;
 }
@@ -343,7 +345,6 @@ footer{
 .banner a {
     color: black;
     text-decoration: underline;
-    font-weight: 500;
 }
 
 .banner a:hover {
@@ -354,7 +355,6 @@ footer{
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-50%);
     }
