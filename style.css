@@ -354,7 +354,7 @@ footer{
 
 @keyframes move {
     from {
-        transform: translateX(0);
+        transform: translateX(100vw);
     }
 
     to {
