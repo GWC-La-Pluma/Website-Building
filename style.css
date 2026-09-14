@@ -323,7 +323,7 @@ footer{
     display: flex;
     align-items: center;
     overflow: hidden;
-    font-family: "Poppins", sans-serif;
+    font-family: "Georgia", serif;
     font-size: 1.8rem;
     margin-top: 60px;
     position: relative;
@@ -340,6 +340,7 @@ footer{
     display: inline-block;
     white-space: nowrap;
     padding-right: 100px;
+    flex-shrink: 0;
 }
 
 .banner a {
