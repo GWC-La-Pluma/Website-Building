@@ -144,7 +144,7 @@ header ul li ul li a{
 }
 
 .title{
-  background-image: url("TacendaPics/cover_div_background.jpg");
+  background-image: url("NexilisPics/nexiliscover.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -171,7 +171,7 @@ header ul li ul li a{
 }
 
 .editors_letter{
-  background-image: url("TacendaPics/letter_div_background.jpg");
+  background-image: url("NexilisPics/letterfromeditors.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -254,7 +254,7 @@ header ul li ul li a{
 }
 
 .gallery{
-  background: url("TacendaPics/gallery_div_background.jpg");
+  // background: url("TacendaPics/gallery_div_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
