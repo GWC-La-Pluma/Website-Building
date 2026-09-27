@@ -116,9 +116,7 @@ header .logoSocials a{
 }
 
 header ul{
-  display: flex;
-  align-items: center;
-  list-style: none;
+  position: relative;
 }
 
 header ul li{
@@ -130,7 +128,7 @@ header ul li{
 header ul li .dropdown__arrow{
   font-size: 1.2em;
   font-weight: initial;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 
 header ul li a{
