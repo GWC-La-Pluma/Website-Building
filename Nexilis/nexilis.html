@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <title>Nexilis</title>
-        <link rel="stylesheet" href="style_nexilis.css">
+        <link rel="stylesheet" href="style_numen.css">
 
         <meta charset="UTF-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,6 @@
                 <div class="socials">
                     <a href="https://www.instagram.com/mvlapluma/" class="fa-brands fa-instagram" id="instagram" target="blank"></a>
                     <a href="mailto:mvlapluma@gmail.com" class="fa-regular fa-envelope" id="gmail" target="blank"></a>
-                    <a href="https://www.pinterest.com/manasiganti/la-pluma-issue-1-tacenda/" class="fa-brands fa-pinterest" id="pinterest" target="blank"></a>
                 </div>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -63,7 +62,7 @@
                             <li><a href="../Paroxysm/paroxysm.html" class ="dropdown__link">Paroxysm</a></li>
                             <li><a href="../Monsoon/monsoon.html" class ="dropdown__link">Monsoon</a></li>
                             <li><a href="../Numen/numen.html" class ="dropdown__link">Numen</a></li>
-                            <li><a href="..nexilis.html" class ="dropdown__link">Nexilis</a></li>
+                            <li><a href="../Nexilis/nexilis.html" class ="dropdown__link">Nexilis</a></li>
                         </ul>
                     </li>
                     <li class="dropdown__item"><a class="dropdown__button">Events<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
@@ -77,6 +76,63 @@
             </nav>
         </header>
         <main>
+            <!-- slideshow popup -->
+            <div class="popup">
+                <!-- top bar -->
+                <div class="top-bar">
+                    <p class="image-name">quatervois1.png</p> 
+                    <span class="close-btn"><img src="../XButton.png" alt=""></span>
+                </div>
+                <!-- arrows -->
+                <button class="arrow-btn left-arrow"><img src="../arrow.png" alt=""></button>
+                <button class="arrow-btn right-arrow"><img src="../arrow.png" alt=""></button>
+                <!-- image -->
+                <div class="scrollbar">
+                    <img src="QuatervoisPics/quatervois1.png" class="large-image" alt="">
+                </div>
+                <!-- image-index -->
+                <h1 class="index">01</h1>
+            </div>
+            
+               <div class="t">
+                <div class="title">
+                    <div class="title_page">
+                        <div class="wrapper">
+                            <div class="static-text">Nexilis [NEK-si-lis] adj: </div>
+                            <div class="dynamic-text"><i>tied or bound together; interwoven.</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let words=document.getElementById('words');
+    
+                window.addEventListener('scroll',function(){
+                    let value=window.scrollY;
+                    words.style.top=value*0.85+100+'px';
+                })
+            </script>
+            <!-- 
+            <div class="editors_letter">
+                <div class="letter_title">
+                    <center><h1 style="font-weight: 100;">Letter from the Editors</h1></center>
+                </div>
+                <!--IMPORTANT: figure out how to indent the first word
+                <div class="letter">
+                    <p align="left" style="padding-bottom: 5vh">Often, every school year starts off as though it were a repeat of the last. We tread the same hallways, seek the same comforts,
+and carve homes in our mundane routines. But autumn falls upon us and a storm gathers bluster just as we think we've figured it out. Soon, we are whisked into countless new experiences—new teachers, new classes, new friends—and find ourselves rushing forward into the blinding light of our futures.
+                        </p>
+    
+                        <p align="left" style="padding-bottom: 5vh">But what appears to be a white haze on the horizon only turns out to be winter. Though we Californians are spared from truly brutal weather, we witness the days shortening, friends retreating— signs that our lives are privy to forces vastly beyond us. As freshmen contend with their burgeoning identities and seniors figure out how to pack theirs within word
+count, the thought inevitably appears: How much of this was ever in our control?</p>
+                            
+                        <p align="left" style="padding-bottom: 5vh">Volume 9: Numen invites you to pinpoint this complex and divine presence-in our par-entage, our math homework, our fleeting rendezvous. We shape each moment of our lives, but we are also guided by an instinct too immense to be embodied, yet too intimate to deny
+influence.</p>
+
+                        <p align="left" style="padding-bottom: 5vh">With our work, we navigate that spiritual space. Volume 9: Numen is a testament to art's acuity— maybe we can't contain the divine, but we can trace the dappled shapes of their shadows, searching for their answers.</p>
+                        
+                </div> -->
+
             <!-- <div class="title_page">
                 <div class="wrapper">
                     <div class="static-text">Tacenda [Ta-'chen-da] n: </div>
@@ -101,16 +157,7 @@
                 <h1 class="index">01</h1>
             </div>
             
-            <div class="t">
-                <div class="title">
-                    <div class="title_page">
-                        <div class="wrapper">
-                            <div class="static-text">Nexilis [NEK-si-lis] adj: </div>
-                            <div class="dynamic-text"><i>tied or bound together; interwoven.</i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
             
             <!-- <div class="editors_letter">
                 <div class="letter_title">
