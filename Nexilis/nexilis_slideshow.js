@@ -21,9 +21,9 @@ images.forEach((item, i) => {
 })
 
 const updateImage = (i) => {
-    let path = `TacendaPics/tacenda${i+1}.png`;
+    let path = `NexilisPics/nexilis${i+1}.png`;
     largeImage.src = path;
-    imageName.innerHTML = `Tacenda: Page ${i+1}`;
+    imageName.innerHTML = `Nexilis: Page ${i+1}`;
     
     if (i < 9){
         imageIndex.innerHTML = `0${i+1}`;
